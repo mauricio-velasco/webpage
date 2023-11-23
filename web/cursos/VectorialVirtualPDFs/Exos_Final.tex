@@ -1,0 +1,163 @@
+\documentclass[notheorems]{beamer}
+%\usetheme{Berkeley}
+\newtheorem{theorem}{Theorem.}
+\newtheorem{lemma}[theorem]{Lemma.}
+\newtheorem{corollary}[theorem]{Corollary.}
+\newtheorem{definition}[theorem]{Definition.}
+\newtheorem{example}[theorem]{Example:}
+\newtheorem{problem}[theorem]{Problem.}
+
+\newtheorem{remark}[theorem]{Remark.}
+\newtheorem{question}[theorem]{Question.}
+\newtheorem{resalt}[theorem]{}
+\newtheorem{conjecture}{Conjecture}
+
+\usetheme{Copenhagen}
+
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\PP}{\mathbb{P}}
+
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\CC}{\mathbb{C}}
+
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+
+\newcommand{\qp}{\rm qp}
+\newcommand{\codim}{\rm codim}
+
+\usepackage{tikz}
+
+\definecolor{cof}{RGB}{219,144,71}
+\definecolor{pur}{RGB}{186,146,162}
+\definecolor{greeo}{RGB}{91,173,69}
+\definecolor{greet}{RGB}{52,111,72}
+
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usetikzlibrary{cd}
+
+\begin{document}
+%Ejercicios de cambios de variable
+
+\begin{frame}{Teorema Fund Integrales Linea (VA)}
+
+Sea $u(x,y,z)=x^2+y^3+z^3$. Calcule el trabajo realizado por el campo vectorial $H(x,y,z)=\nabla u(x,y,z)$ a lo largo de la curva parametrizada $\sigma(t)=\left(\sin(t), \cos(t), cos(t/2)\right)$ con $0\leq t\leq 2\pi$.
+
+\begin{enumerate}
+\item $-2$
+\item $2$
+\item $-3$
+\item $3$
+\item $0$
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}{Teorema Fund Integrales Linea (VB)}
+
+Sea $u(x,y,z)=x^2+y^3+z^3$. Calcule el trabajo realizado por el campo vectorial $H(x,y,z)=\nabla u(x,y,z)$ a lo largo de la curva parametrizada $\sigma(t)=\left(\sin(t), \cos(t), 2cos(t)\right)$ con $0\leq t\leq 2\pi$.
+
+\begin{enumerate}
+\item $0$
+\item $-2$
+\item $2$
+\item $-3$
+\item $3$
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}{Teorema Fund Integrales Linea (VC)}
+
+Sea $u(x,y,z)=x^2+2y^3+z^2$. Calcule el trabajo realizado por el campo vectorial $H(x,y,z)=\nabla u(x,y,z)$ a lo largo de la curva parametrizada $\sigma(t)=\left(\sin(t), \cos(t/2), 2cos(t)\right)$ con $0\leq t\leq 2\pi$.
+
+\begin{enumerate}
+\item $-4$
+\item $4$
+\item $-3$
+\item $3$
+\item $0$
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Teorema Fund Integrales Linea (VD)}
+Sea $u(x,y,z)=3x^3+y^2+z^2$. Calcule el trabajo realizado por el campo vectorial $H(x,y,z)=\nabla u(x,y,z)$ a lo largo de la curva parametrizada $\sigma(t)=\left(\cos(t/2), \cos(t), 2cos(t)\right)$ con $0\leq t\leq 2\pi$.
+
+\begin{enumerate}
+\item $-6$
+\item $6$
+\item $-8$
+\item $8$
+\item $0$
+\end{enumerate}
+
+
+
+\end{frame}
+
+
+\begin{frame}{Integrales de superficie (VA)}
+Sea $H(x,y,z)=(0,0,z)$. Calcule el flujo de $H$ a trav\'es de la superficie cuadrada contenida en el plano $z=2$ cuyos puntos satisfacen $-2\leq x\leq 2$, $-2\leq y\leq 2$ orientada hacia arriba. 
+
+\begin{enumerate}
+\item $8$
+\item $4$ 
+\item $2$
+\item $0$
+\item $-2$
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Integrales de superficie (VB)}
+Sea $H(x,y,z)=(5x,0,0)$. Calcule el flujo de $H$ a trav\'es de la superficie cuadrada contenida en el plano $x=2$ cuyos puntos satisfacen $-2\leq y\leq 2$, $-2\leq z\leq 2$ orientada en la direcci\'on positiva del eje $x$. 
+
+\begin{enumerate}
+\item $40$
+\item $60$ 
+\item $20$
+\item $10$
+\item $0$
+\end{enumerate}
+
+\end{frame}
+\begin{frame}{Integrales de superficie (VC)}
+Sea $H(x,y,z)=(0,0,2z)$. Calcule el flujo de $H$ a trav\'es de la superficie cuadrada contenida en el plano $z=3$ cuyos puntos satisfacen $-2\leq x\leq 2$, $-2\leq y\leq 2$ orientada hacia arriba. 
+
+\begin{enumerate}
+\item $32$
+\item $24$ 
+\item $8$
+\item $-16$
+\item $-4$
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Integrales de superficie (VD)}
+Sea $H(x,y,z)=(3x,0,0)$. Calcule el flujo de $H$ a trav\'es de la superficie cuadrada contenida en el plano $x=1$ cuyos puntos satisfacen $-2\leq y\leq 2$, $-2\leq z\leq 2$ orientada en la direcci\'on positiva del eje $x$. 
+
+\begin{enumerate}
+\item $12$
+\item $16$ 
+\item $0$
+\item $-12$
+\item $-16$
+\end{enumerate}
+
+\end{frame}
+
+
+\end{document}
+

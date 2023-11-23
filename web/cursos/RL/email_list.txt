@@ -1,0 +1,48 @@
+
+Participantes (13)
+
+0. Mauricio Velasco
+1. Nicolás Betancourt 
+2. Nicolás Castro 
+3. Sergio Cristancho 
+4. David Corredor
+5. Federico Galvez
+6. Juan Manuel Perez
+7. Nicolás Rugeles 
+8. Santiago Fino 
+9. Mateo Campo 
+10. Jose Luis Mora
+11. Deniz Sanchez
+12. Juan Camilo Bedoya
+13. Javier Hernán García 
+14. Melissa Robles
+15. Diego Arevalo
+16. Sergio Medrano
+17. Valentina Laverde
+
+
+"Mauricio Velasco"<mvelasco@uniandes.edu.co>,
+"Nicolás Betancourt"<n.betancourt10@uniandes.edu.co>,
+"Nicolás Castro"<na.castro976@uniandes.edu.co>,
+"Sergio Cristancho"<se.cristancho@uniandes.edu.co>, 
+"David Corredor"<d.corredor@uniandes.edu.co>,
+"Federico Galvez"<f.galvez@uniandes.edu.co>,
+"Juan Manuel Perez"<jm.perezo@uniandes.edu.co>,
+"Nicolás Rugeles"<n.rugeles@uniandes.edu.co>,
+"Santiago Fino"<s.fino@uniandes.edu.co>,
+"Mateo Campo"<m.campo10@uniandes.edu.co>,
+"Jose Luis Mora"<j.morap@uniandes.edu.co>,
+"Deniz Andrea Sanchez Segura"<deasanchezse@unal.edu.co>,
+"Juan Camilo Bedoya Malagon"<jc.bedoya@uniandes.edu.co>,
+"Javier Hernán García"<jh.garcia1776@uniandes.edu.co>,
+"Melissa Veronica Robles Carmona" <mv.robles@uniandes.edu.co>,
+"Diego Arevalo" <darevaloo@gmail.com>,
+Sergio Alejandro Medrano <sa.medrano@uniandes.edu.co>,
+Valentina Laverde Tovar <v.laverde@uniandes.edu.co> 
+
+INSCRITOS:
+
+"Nicolás Betancourt"<n.betancourt10@uniandes.edu.co>,
+"Nicolás Castro"<na.castro976@uniandes.edu.co>,
+"Sergio Cristancho"<se.cristancho@uniandes.edu.co>, 
+"Juan Camilo Bedoya Malagon"<jc.bedoya@uniandes.edu.co>,

@@ -1,0 +1,173 @@
+\documentclass{beamer}
+\usetheme{Berkeley}
+\begin{document}
+
+\begin{frame}
+\frametitle{Ejercicio 1:}
+Sea $g(x,y)= e^{x-1}+e^{ysin(3x-3)} +xy +8$.
+
+\begin{enumerate}
+\item Calcule $\frac{\partial g}{\partial x}(1,0)$ y $\frac{\partial g}{\partial y}(1,0)$ mediante los dos m\'etodos. Verifique que ambos c\'alculos dan el mismo resultado. 
+\item Encuentre la funci\'on $\ell(x,y)$ que mejor aproxima a $g(x,y)$ cerca de $(x,y)=(1,0)$.
+
+\item Encuentre la ecuaci\'on del plano tangente a la gr\'afica de $g$ en el punto $(1,0,10)$.
+\item Iniciando en $(1,0)$, en qu\'e direcci\'on deberiamos movernos para que $g$ aumente lo m\'as r\'apidamente posible?
+
+\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Ejercicio 2:}
+Sea $h:\mathbb{R}^2\rightarrow \mathbb{R}$ la funci\'on dada por
+\[h(x,y)=\begin{cases}
+\frac{x^2y}{x^2+y^2}\text{ si $(x,y)\neq (0,0)$}\\
+0\text{, si $(x,y)=(0,0)$}
+\end{cases}
+\]
+
+\begin{enumerate}
+\item Calcule $\frac{\partial h}{\partial x}(0,0)$ y $\frac{\partial h}{\partial y}$ en $(0,0)$.
+\item Calcule la funci\'on $\ell(x,y)$ que mejor aproxima a $h(x,y)$ cerca del origen.
+\item Calcule 
+\[\lim_{(x,y)\rightarrow (0,0)} \frac{h(x,y)-\ell(x,y)}{\sqrt{x^2+y^2}}.\]
+Es $h$ diferenciable en $(0,0)$?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejercicio 3:}
+Sea $h:\mathbb{R}^2\rightarrow \mathbb{R}$ la funci\'on dada por
+
+\[h(x,y)=\begin{cases}
+\frac{x^2y}{x^2+y^2}\text{ si $(x,y)\neq (0,0)$}\\
+0\text{, si $(x,y)=(0,0)$}
+\end{cases}
+\]
+\begin{enumerate}
+\item Es $h$ continua en $(0,0)$?
+\item Demuestre que las derivadas parciales de $h(x,y)$ son continuas cuando $(x,y)\neq (0,0)$.
+\item En qu\'e puntos del plano es $h(x,y)$ diferenciable?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejercicio 4: (Curvas Parametrizadas)}
+Sea $\sigma: \mathbb{R}\rightarrow \mathbb{R}^3$ la funci\'on dada por $\sigma(t)=(\cos(t),\sin(t), t^2)$.
+\begin{enumerate}
+\item Haga un dibujo de la curva en el espacio parametrizada por $\sigma$ para $0\leq t\leq 2$. Ll\'amela $C$.
+\item Calcule $D\sigma(\pi)$. Qu\'e interpretaci\'on f\'isica tiene?
+\item Pasa por $(0,1,\frac{\pi^2}{4})$? Qu\'e rapidez tiene la part\'icula descrita por $\sigma$ en ese momento?
+\item Encuentre otra parametrizaci\'on de la curva $C$ que la recorra en el intervalo $[0,1]$.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejercicio 5: (Campos Vectoriales)}
+\begin{enumerate}
+
+\item Sea $F(x,y)=(-y,x)$ (asi que $F:\mathbb{R}^2\rightarrow \mathbb{R}^2$ es un campo vectorial). Dibuje los vectores correspondientes a $F(1,0)$, $F(0,1)$, $F(-1,0)$, $F(0,-1)$, $F(1,1)$ y $F(-1,1)$. 
+
+\item (Construyendo campos vectoriales)
+\begin{enumerate}
+\item La ley de gravitaci\'on universal dice: Si hay un cuerpo de masa $M$ en el origen entonces la fuerza experimentada por un objeto de masa $m$ en el punto $(x,y,z)$ es proporcional al producto de las masas e inversamente proporcional al cuadrado de la distancia entre ellas. Escriba una f\'ormula para el campo de fuerzas $G(x,y,z)$ experimentado por un objeto de masa $m$.
+\item Escriba la fuerza resultante si hay un cuerpo de masa $M_1$ en el origen y otro de masa $M_2$ en $(1,2,3)$ (La fuerza total es la suma de las fuerzas individuales).
+\end{enumerate}
+\end{enumerate}
+
+ 
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejercicio 6: (Campos Vectoriales y Curvas parametrizadas)}
+\begin{enumerate}
+\item Imagine que $F$ (del ejercicio anterior) mide la velocidad de un fluido en el plano. Si soltamos una part\'icula en el punto $(1,0)$, qu\'e trayectoria cree usted que deber\'ia seguir esa part\'icula? 
+
+\item Dibuje la curva $\sigma(t)=(\cos(t), \sin(t))$ en el mismo plano que hizo en la parte $(1)$. Qu\'e relaci\'on hay entre $F(\sigma(0))$ y $\sigma'(0)$?
+
+\item Escriba una ecuaci\'on diferencial para buscar la trayectoria $\phi(t)=(x(t),y(t))$ que debe seguir una part\'icula iniciando en $(1,1)$ movida por $F$.
+
+\item ** Resu\'elva la ecuaci\'on que encontr\'o en el punto anterior.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Ejercicio 7: Composici\'on de funciones.}
+Defina las funciones $G(x_1,x_2)=\left(\sin(\pi(x+y)), \cos(x-y)\right)$ y 
+$f(y_1,y_2)=y_1^2+y_2^2$.
+
+\begin{enumerate}
+\item Calcule la funci\'on $h(x_1,x_2)=f(G(x_1,x_2))$. 
+\item Es posible calcular $\phi(y_1,y_2)= G(f(y_1,y_2))$? Explique su respuesta.
+
+\item Calcule la matriz $Dh(1,1)$ de dos maneras (y verifique que el resultado es el mismo)
+\begin{enumerate}
+\item Derivando la funci\'on que calcul\'o en la parte $(1)$.
+\item Utilizando la regla de la cadena.
+\end{enumerate}
+\item Si $G$ es el campo de velocidades de un fluido en el plano, qu\'e representa la cantidad $h(a,b)$?
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Ejercicio 8: (Para qu\'e la cadena?) } 
+
+Suponga que la funci\'on $T(x,y)$ mide la temperatura (en grados cent\'igrados) del punto $(x,y)$ y satisface :
+
+
+\begin{center}
+\begin{tabular}{ c | c | c | c}
+$(a,b)$ & $\frac{\partial T}{\partial x}(a,b)$ & $\frac{\partial T}{\partial y}(a,b)$ & $T(a,b)$\\ 
+\hline
+$(1,0)$ & $3$ & $-2$ & $10$\\
+$(0,1)$ & $-3$ & $5$ & $20$\\
+\end{tabular}
+\end{center}
+
+Suponga adem\'as que una part\'icula sigue la curva parametrizada $\sigma(t)=\left(\cos(t/2),\sin(t/2)\right()$. 
+
+\begin{enumerate}
+\item Escriba una expresi\'on para la funci\'on $h(t)$ que mide la temperatura de la part\'icula en el instante $t$.
+
+\item Calcule la tasa de cambio de la temperatura de la part\'icula en el instante $t=\pi$ (medida en metros/seg).
+
+\item * Iniciando en $(0,1)$, en qu\'e direcci\'on deberiamos movernos (con rapidez unitaria) para que la temperatura {\it disminuya} lo m\'as r\'apido posible?
+
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}{Ejercicio 9: C\'alculos con regla de la cadena}
+
+
+\begin{enumerate}
+\item Suponga que 
+\[\phi(x,z) = f(g_1(x,h),g_2(t(x,z),z)).\]
+donde $f,g_1,g_2$ y $t$ son funciones dadas.
+Encuentre una expresi\'on para 
+$\frac{\partial \phi}{\partial x}(a,b)$
+(aseg\'urese de escribir en qu\'e punto debe evaluarse cada derivada).
+\item Suponga que $U:\mathbb{R}^2\rightarrow \mathbb{R}$ es una funci\'on escalar $U(x,y)$ y defina $W(r,\theta)=U\left(r\cos(\theta), r\sin(\theta)\right)$. Calcule $\frac{\partial W}{\partial r}(r=1,\theta=\frac{\pi}{4})$ y $\frac{\partial W}{\partial \theta}(r=1,\theta=\frac{\pi}{4})$ en t\'erminos de las derivadas parciales de $U$ (contra $x$ y contra $y$).
+\end{enumerate}
+
+
+\end{frame}
+
+
+
+\end{document}
+
+
+\[
+\begin{tabular}{ccc}
+punto & \frac{\partial T}{\partial x} & \frac{\partial T}{\partial y}\\ 
+\hline
+\end{tabular}
+\]
+
+
+
+\end{document}

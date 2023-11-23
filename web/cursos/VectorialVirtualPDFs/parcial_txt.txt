@@ -1,0 +1,75 @@
+6 OPCIONES POR PROBLEMA
+
+(1.A) La densidad del petróleo en una región solida de roca es de 2 Tons/m^3.  Encuentre la masa total del petróleo contenido en la región encerrada por los planos x=0, y=0, z=0 y x+y+z=1. Medida en toneladas, esta masa es:
+
+1/3, 1/6, 1/2, 0.166, 0.33, NO es posible saber con la info dada
+
+
+(1.B)  	
+
+La densidad del petróleo en una región sólida de roca esta dada por la siguiente función (en Tons/m^3):
+
+\rho(x,y,z)=e^{z}
+
+Encuentre la masa total del petróleo contenido en la región dada por las siguientes desigualdades:
+
+0\leq x,y,z\leq 2
+
+4(e^2-1), 8 , (e^2-1)^3, 4, (1-3e^3)
+
+
+
+(3.A) Llame E al sólido que esta encerrado por el paraboloide 
+z=4-x^2-y^ 2 y el plano z=0. Usted sabe que E tiene densidad constante igual a 2 Kg/m^3. Calcule la masa del sólido. (Sugerencia: Use coordenadas cilindricas)
+
+16\pi, 8\pi, 10\pi, 32\pi, 4\pi
+
+
+(3.B) Llame B a una bola de radio 10 centrada en el origen. Suponga que la densidad en (x,y,z) es igual a la distancia entre (x,y,z) y el origen. Calcule la masa de E. (Sugerencia: Use coordenadas esfericas).
+
+\pi 10^4
+
+\pi 10^3
+
+\pi 10^2
+
+\pi^2 10^2
+
+\pi^2 10
+
+
+(4.A) Calcule el volumen de la región
+
+\frac{x^2}{2^2} + \frac{y^2}{3^2} + \frac{z^2}{2^2} \leq 1 
+
+(Sugerencia: Use le cambio de variable (x,y,z)=(2u,3v,2w)).
+
+Ese volumen es:
+
+16\pi,  4\pi/9, 32\pi, 4\pi/3, 1 , \pi
+
+
+(4.B) Calcule el volumen de la región
+
+\frac{x^2}{2^2} + \frac{y^2}{3^2} + \frac{z^2}{4^2} \leq 1 
+
+(Sugerencia: Use le cambio de variable (x,y,z)=(2u,3v,4w)).
+
+Ese volumen es:
+
+32\pi, 4\pi/3, \pi/18, 1, 2\pi, 64\pi
+
+
+
+(5.A) Sea $f(x,y,z)= x^3+y^3+z^3+x^2-y^2$. La divergencia del gradiente de $f$ es igual a:
+
+6x+6y+6z, (x,y,z), Esa operación no esta definida, (3x^2, 3y^2, 3z^2), 3x^2+3y^2+3z^2+2x-2y
+
+
+(5.B) Sea $f(x,y,z)= x^3-y^3+z^3+x^2-y^2$. La divergencia del gradiente de $f$ es igual a:
+
+6x-6y+6z, (x,y,z), Esa operación no esta definida, (3x^2, -3y^2, 3z^2), 3x^2-3y^2+3z^2+2x-2y
+
+
+
+

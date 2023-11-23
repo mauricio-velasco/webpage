@@ -1,0 +1,8 @@
+Andres Bravo -- p-norma es norma. [Convexidad heredada de la convexidad de la funcion que eleva a la p]
+Jesús Ospino -- [ Transformadad de Cayley ejercicio bien preparado, con dudas pero OK]}
+Nicolás Torres -- [Teorema espectral]
+Sebastián Rodriguez -- [Norma p y Norma 1,infinito en matrices ]
+Diego -- [Constantes ]
+Juan Camilo -- [Calculo explicito de la SVD]
+Felipe ---
+Andres Takahashi ---

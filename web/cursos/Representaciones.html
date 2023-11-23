@@ -1,0 +1,518 @@
+<html>
+</head><title>Teor&iacutea de Representaciones:  Segundo Semestre 2020 </title></head>
+<body bgcolor=white text=black link=#FF6600 alink=#0099CC 
+vlink=#0099CC><font face="Trebuchet MS"><center>
+
+<font size="10"> <b>Una introducci&oacuten virtual a la Teor&iacutea de Representaciones:</b><br> <p></p> 
+
+<font size="5"> </center> 
+
+<p> La teor&iacutea de representaciones es una manera general de entender y manipular las simetr&iacuteas de un objeto. M&aacutes precisamente es el estudio de las maneras en las que un grupo puede actuar sobre un espacio vectorial. Es una rama central de las matem&aacuteticas puras y aplicadas. </p>
+
+<p>
+Este curso es una introducci&oacuten a las representaciones complejas de grupos finitos con especial &eacutenfasis en las representaciones del grupo de permutaciones S_n. Discutiremos los aspectos m&aacutes fundamentales y cl&aacutesicos de la teor&iacutea (reducibilidad completa, teor&iacutea de caracteres, inducci&oacuten y restricci&oacuten), algunas aplicaciones recientes de representaciones en probabilidad y machine learning (ver [D], [K] abajo) y, si el tiempo lo permite, el nuevo acercamiento a las representaciones de S_n que se sigue de ideas de Vershik-Okunkov (ver [VO] abajo) que puede extenderse de manera simult&aacutenea a todos los grupos de Coxeter.</p>
+
+El texto principal del curso ser&aacuten las notas del instructor.
+Estas se basar&aacuten en los siguientes libros de referencia (todos altamente recomendados y complementarios entre si):
+<ul>
+<p><li>[FH] Fulton, William y Harris, Joe: Representation Theory, A First course. Graduate Texts in Mathematics,1991.</li></p> 
+<p><li>[S] Sagan, Bruce: The symmetric group. Graduate Texts in mathematics 203, 1991.</li></p>  
+<p><li>[D] Diaconis, Persi: Group representations in probability and statistics, Institute of mathematical Statistics, volume 11, 1998 </li></p>
+<p><li>[K] Kondor, Risi: Group theoretical methods in machine learning, PhD thesis, University of Chicago, 2008. <a href=https://people.cs.uchicago.edu/~risi/papers/KondorThesis.pdf target="_blank">[ArXiv]</a> </li></p>
+<p><li>[VO] Vershik y Okunkov: A new approach to the representation theory of the symmetric groups II, 2005. <a href=https://arxiv.org/pdf/math/0503040.pdf target="_blank">[ArXiv]</a> </li></p>
+</ul>
+
+<p>
+La mayor parte de lo que aprender&aacuten en este curso ser&aacute el resultado de su propio trabajo en dos aspectos de igual de importancia: Reflexi&oacuten posterior a cada clase sobre los resultados discutidos en ella y trabajo en los ejercicios asignados clase a clase y recopilados por los estudiantes (ver: </a> <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Exos.pdf" target="_blank">Ejercicios</a>). El trabajo en grupo esta altamente recomendado, especialmente en el contexto de virtualidad en el que nos encontramos.
+<p>
+Los criterios de evaluaci&oacuten del curso son:
+<ul>
+<p><li> Dos examenes parciales a realizarse en las fechas especificadas abajo (30%  y 20% resp) y un examen final (25%) asi como un trabajo final escrito (25%) a presentarse en grupos de dos o tres estudiantes, sobre un tema escogido por ustedes en el &aacuterea de teor&iacutea de representaciones y sus aplicaciones. Las preguntas de los examenes ser&aacuten variaciones menores de los ejercicios asignados en clase.</li></p>
+
+<p><li> El trabajo final deber&aacute hacerse en el estilo de los: what is....? de la Notices de la AMS <a href=" https://www.ams.org/notices/200511/what-is.pdf"> [ver] </a></p></li>
+
+<p><li> La nota final se decidira calculando el promedio aritmetico de las cuatro notas de arriba y redonde&aacutendola al multiplo de 0.5 mas cercano. NO se recibiran trabajos tarde y NO se permitira la entrega de parciales en otras fechas salvo con incapacidad medica (por favor reserven desde hoy las fechas de parciales marcadas abajo). </li></p>
+</ul>
+
+Metodolog&iacutea:
+<p><li> Como resultado de las restricciones de 2020-2 el curso se realizar&aacute de manera virtual mediante SicuaPlus en los horarios establecidos por registro.</li></p>
+
+<p><li> Las actividades clase a clase estar&aacuten disponibles clase a clase en esta p&aacutegina web (ver al final).</li></p>
+
+<font size="5"> </center> 
+
+<ul>
+<p> PLAN DEL CURSO: 
+<table border="1">
+<tr>
+<td> Semana </td>
+<td> Fecha (MM/DD) </td>
+<td> Tema </td>
+<td> Evaluaciones</td>
+</tr>
+
+<tr>
+<td> 1</td>
+<td> 8/10 - 8/14 </td>
+<td> Qu&eacute es una representaci&oacuten? (representaciones complejas de grupos finitos).</td>
+</tr>
+
+<tr>
+<td> 2</td>
+<td> 8/17-8/21</td>
+<td> Reducibilidad completa de representaciones complejas de grupos finitos</td>
+</tr>
+
+<tr>
+<td> 3</td>
+<td> 8/24-8/28 </td>
+<td> Teor&iacutea de caracteres 1 </td>
+</tr>
+
+<tr>
+<td> 4</td>
+<td> 8/31-9/4 </td>
+<td> Teor&iacutea de caracteres 2 / Transformada de Fourier</td>
+</tr>
+
+<tr>
+<td> 5</td>
+
+<td> 9/7-9/11 </td>
+<td> Inducci&oacuten y restricci&oacuten</td>
+</tr>
+
+<tr>
+<td> 6</td>
+<td> 9/14-9/18 </td>
+<td> Reciprocidad de Frobenius</td>
+</tr>
+
+
+<tr>
+<td> 7</td>
+<td>  9/21-9/25</td>
+<td> Algunas aplicaciones a estad&iacutestica [D] </td>
+<td> Parcial 1 -- Jueves + Entrega 1 trabajo final (TEMA)</td>
+
+</tr>
+
+
+<tr>
+<td> 8</td>
+<td> 9/28-10/2 </td>
+<td> Representaciones de S_n </td>
+</tr>
+
+<tr>
+<td> 9</td>
+<td> 10/5-10/9 </td>
+<td> SEMANA DE RECESO </td>
+</tr>
+
+
+<tr>
+<td> 10</td>
+<td> 10/12-10/16 </td>
+<td> Representaciones de S_n </td>
+</tr>
+
+
+<tr>
+<td> 11</td>
+<td> 10/19-10/23 </td>
+<td> Representaciones de S_n </td>
+</tr>
+
+
+<tr>
+<td> 12</td>
+<td> 10/26-10/30</td>
+<td> La construcci&oacuten de Weyl</td>
+</tr>
+
+<tr>
+<td> 13</td>
+<td> 11/2-11/6 </td>
+<td> La construcci&oacuten de Weyl 2 </td>
+</tr>
+
+<tr>
+<td> 14</td>
+<td> 11/9-11/13 </td>
+<td> Algunas aplicaciones a problemas de machine learning (Kondor [K])</td>
+<td> Parcial 2 -- Jueves</td>
+
+</tr>
+
+<tr>
+<td> 15</td>
+<td> 11/16-11/20 </td>
+<td> Representaciones de S_n (via [VO])</td>
+</tr>
+
+<tr>
+<td> 16</td>
+<td> 11/23-11/27 </td>
+<td> Representaciones de S_n (via [VO])</td>
+</tr>
+
+<tr>
+<td> 17</td>
+<td> 11/30-12/4 </td>
+<td> Representaciones de S_n (via [VO])</td>
+</tr>
+
+<tr>
+<td> 18</td>
+<td> 12/7-12/11 </td>
+<td> Representaciones de S_n (via [VO])</td>
+<td> Entrega del trabajo final</td>
+
+</tr>
+</p>
+</ul>
+
+
+
+<ul>
+<font size="5"> 
+
+<p> 
+<table border="1">
+<tr>
+<td> Actividades clase a clase </td>
+<td> Descripcion </td>
+<td> Deadline </td>
+<td> Duraci&oacuten estimada </td>
+<td> Enlaces </td>
+</tr>
+
+<tr>
+<td> 1.1 </td>
+<td> Qu&eacute es una representaci&oacuten? </td>
+<td> </td>
+<td>  </td>
+<td> <a href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Defs_Representaciones.pdf" target="_blank"> Pdf referencia </a> ,<A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Clase_Ago_10.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+<tr>
+<td> 1.2 </td>
+<td> Morfismos y primeros ejemplos </td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/-EQaYY9tONs target="_blank"> Video </a> ,<A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Ago_11.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 1.3 </td>
+<td> Subrepresentaciones y sumas directas (2 videos)</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/gHvEqMj-d_Y target="_blank"> Video_1 </a> , <a href=https://youtu.be/J89kj2O7Vb8 target="_blank"> Video_2 </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Ago_13.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 2.1 </td>
+<td> De d&oacutende vienen las representaciones? </td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/P1xLz4Fu2tA target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Ago_18.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+<tr>
+<td> 2.2</td>
+<td> Duales y productos tensoriales de representaciones </td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/mitmwFqivV4 target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Ago_20.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 3.1</td>
+<td> Homs y productos sim&eacutetricos de representaciones </td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/Y2ZRKlejUFQ target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Ago_25.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 3.2</td>
+<td> Productos sim&eacutetricos y exteriores de representaciones </td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/6w6kSBuJhkc target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Ago_27.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 4.1</td>
+<td> Reducibilidad completa de representaciones </td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/y_X3daHCp4o target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_1.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 4.2</td>
+<td> Reducibilidad completa de representaciones parte 2</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/Js3G6DpUpQI target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_3.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 5.1</td>
+<td> Componentes Isot&iacutepicas </td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/V_XUsKYlHbo target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_8.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+
+<tr>
+<td> 5.2</td>
+<td> Componentes Isot&iacutepicas 2</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/jBTN7-vfpr4 target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_10.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 6.1</td>
+<td> El algebra conmutante</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/-ku96TBmAp4 target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_15.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+
+<tr>
+<td> 6.2</td>
+<td> Qu&eacute es el caracter de una representaci&oacuten?</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/5MCycdfnqqc target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_17.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 7.1</td>
+<td> Ortonormalidad de caracteres irreducibles</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/F_ub_e-EEiQ target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_22.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 7.2</td>
+<td> Caracteres de S_3</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/5-CR0N3kirU target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_24.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 8.1</td>
+<td> Caracteres de S_4</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/lZhDR0PFUI4 target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Sep_29.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 8.2</td>
+<td> Funciones de clase y promedios ponderados.</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/imobBijhBvc target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Oct_1.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 9.1</td>
+<td> Transformadas de Fourier 1</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/gsCiupZ2kAw target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Oct_13.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 9.2</td>
+<td> Transformadas de Fourier 2, Caminatas aleatorias en grupos</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/B2Vs7HLse4c target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Oct_15.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 10.1</td>
+<td> (Interludio) Teor&iacutea de n&uacutemeros y caracteres.</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/MTV3tdrsNio target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Oct_20.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+
+<tr>
+<td> 10.2</td>
+<td> Ejemplos de caminatas aleatorias en grupos 1</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/x6uPoaotnV0 target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Oct_22.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+
+<tr>
+<td> 11.1</td>
+<td> Ejemplos de caminatas aleatorias en grupos 2</td>
+<td>  </td>
+<td>  </td>
+<td> <a href=https://youtu.be/VNO8nXBhIAg target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Oct_27.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+
+<tr>
+<td> 11.2</td>
+<td> Representaciones inducidas 1</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/FehwLM1IS2k target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Oct_29.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+<tr>
+<td> 12.1</td>
+<td> Representaciones inducidas 2</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/OY25vqwOP2c target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Nov_3.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 12.2</td>
+<td> Representaciones inducidas 3</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/6n_t8tX1s_c target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Nov_5.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+
+<tr>
+<td> 13.2</td>
+<td> Representaciones irreducibles de S_n, 1</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/I-QVPq7JLrI target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Nov_12.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+
+<tr>
+<td> 14.1</td>
+<td> Representaciones irreducibles de S_n, 2 (m&oacutedulo de Specht)</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/-3sU_CeLLPo target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Nov_17.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 14.2</td>
+<td> Representaciones irreducibles de S_n, 3 (orden de dominancia)</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/l7eimJlucng target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Nov_19.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 15.1</td>
+<td> Representaciones irreducibles de S_n, 4 (teoremas fundamentales)</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/VyJn6Y1aNT4 target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Nov_24.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+<tr>
+<td> 15.1</td>
+<td> Representaciones irreducibles de S_n, 5 (una base para S^lambda)</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/T35kOCPxZDQ target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Nov_26.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+<tr>
+<td> 16.1</td>
+<td> F&oacutermula del caracter de Frobenius</td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/Klvyx-w6ZUM target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFs/Notas_Dic_1.pdf" target="_blank"> PDF Clase </a> </td>
+</tr>
+</p>
+
+
+
+
+
+
+<!--
+<tr>
+<td> 1.1 </td>
+<td> Video: Qu&eacute es una representaci&oacuten? </td>
+<td> </td>
+<td>  </td>
+<td> <a href=https://youtu.be/gHvEqMj-d_Y target="_blank"> Video </a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/RepsVirtualPDFS/Notas_Clase_Ago_10.pdf" target="_blank"> PDF </a> </td>
+</tr>
+</p>
+</ul>
+-->

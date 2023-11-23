@@ -1,0 +1,133 @@
+\documentclass[12pt]{article}
+\oddsidemargin 0.0in
+\topmargin 0.0in
+\headheight 0.0in
+\textwidth 7.0 in
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage {amssymb}
+\usepackage {stmaryrd}
+\usepackage {graphicx}
+\usepackage{graphics}
+\usepackage[all]{xy}
+\usepackage{amsrefs}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{construction}{Construction}
+\newtheorem{remark}{Remark}
+\newtheorem{ex}{Example}
+\newcommand{\RR}{\mathbb{R}}
+
+\begin{document}
+\begin{center}
+\begin{Large}
+{\bf C\'alculo Vectorial -- Parcial I}\\ 
+\end{Large}
+{Jueves 5 de Febrero de 2020.}
+\bigskip
+\\
+\begin{tabular}{ll}
+Nombre: & \dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\\
+\end{tabular}
+\bigskip
+
+\begin{large}
+
+\bigskip
+{\bf INSTRUCCIONES -- LEA ESTO ANTES DE EMPEZAR}
+\end{large}
+\end{center}
+\begin{itemize}
+\item{ Este examen tiene 4 problemas.}
+\item{Muestre su trabajo. Para recibir todo el credito debe mostrar su razonamiento y los pasos que lo llevaron a la respuesta final y estos deben ser escritos claramente. Si necesita m\'as espacio escriba en la parte de atras del ejercicio anterior pero aseg\'urese de identificar claramente a que ejercicio corresponde cada pagina.}
+\item{Este es un examen individual y con libro cerrado. Su Celular debe estar {\bf apagado} (si no puede apagarlo por motivos de urgencia mayor por favor comun\'iquelo a su profesor).}
+
+\item{Este examen tiene una duracion de 80 mins.}
+\end{itemize}
+Se espera integridad academica de todos los estudiantes. Entendiendo esto, declaro que no voy a dar, usar o recibir ayuda no autorizada durante este examen.\\
+\bigskip
+\bigskip
+\bigskip
+\noindent Firma del estudiante:\\
+\hline
+\begin{center}
+\begin{large}
+\bigskip 
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c}
+\hline
+Problema $\sharp$ & 1. & 2. & 3. & 4. & TOTAL\\
+\hline
+Puntos ganados & & & & &\\
+\hline 
+\end{tabular}
+\end{large}
+\end{center}
+\newpage
+
+\begin{enumerate}
+\item {\bf [12 pts]} Sea $f(x,y)=e^{xy}+\sin(x+y)$.
+\begin{enumerate}
+\item  Verifique rigurosamente que $f(x,y)$ es diferenciable en todos los puntos $(x,y)\in \RR^2$.
+\item Encuentre la funci\'on $\ell(x,y)$ que mejor aproxima a $f(x,y)$ cerca de $(0,0)$.
+\item Encuentre la ecuaci\'on del plano tangente a la gr\'afica de $f(x,y)$ en $(0,0,1)$ y dibuje este plano.
+\end{enumerate}
+
+\newpage
+
+\item {\bf [14 pts]} La temperatura de los puntos $(x,y,z)$ de $\RR^3$ esta dada por la funci\'on
+\[T(x,y,z)= 10x+xy+5yx^2.\] Un insecto camina sobre la esfera de ecuaci\'on $x^2+y^2+z^2=3$. Encuentre las temperaturas m\'inima y m\'axima que el insecto puede experimentar y los puntos de $\RR^3$ donde estas temperaturas se alcanzan
+
+\newpage
+\item {\bf [12 pts]} \begin{enumerate}
+\item Enuncie de manera precisa el "Teorema del gradiente" visto en clase.
+\item Encuentre la ecuaci\'on del plano tangente a la colecci\'on de soluciones $(x,y,z)$ de la ecuaci\'on
+\[xyz+x^2+y^2+z^2=4\]
+en el punto $(1,1,1)$.
+\item Justifique su soluci\'on de la parte $(b)$ utilizando el Teorema de la parte $(a)$.
+\end{enumerate}
+
+
+\newpage
+
+\item {\bf [12 pts]} En los siguientes ejercicios marque V si el enunciado es Verdadero y F si el enunciado es falso. No es necesario escribir la justificaci\'on de su respuesta. ESCRIBA SUS RESPUESTAS EN LA TABLA QUE APARECE A CONTINUACION.
+\[
+\begin{array}{|c|cc|}
+\hline
+a & & \\
+\hline
+b & & \\
+\hline
+c & & \\
+\hline
+d & & \\
+\hline
+e & & \\
+\hline
+\end{array}
+\]
+
+
+
+\begin{enumerate}
+
+\item Si $\sigma(t)=(x(t),y(t),z(t))$ es una curva parametrizada que para todo $t$ esta contenida en la esfera de ecuaci\'on $x^2+y^2+z^2=100$ entonces los vectores $\sigma(t)$ y $\sigma'(t)$ son perpendiculares para todo $t$.
+1
+
+\item Sea $U:\RR^2\rightarrow \RR$ una funci\'on escalar diferenciable y defina $W(r,\theta)=U(r\cos\theta, r\sin\theta)$. Entonces para todo $r_0$ y $\theta_0$ tenemos
+\[\frac{\partial W}{\partial \theta}(r_0,\theta_0) = \frac{\partial U}{\partial x}(r_0\cos\theta_0, r_0\sin\theta_0)\left(-r_0\sin\theta_0\right)+ \frac{\partial U}{\partial y}(r_0\cos\theta_0, r_0\sin\theta_0)\left(r_0\cos\theta_0\right)\]
+
+\item Sea $\sigma(t)$ una curva parametrizada en el plano. Si para todo $t$ tenemos $\|\sigma'(t)\|=10$ entonces $\sigma(t)$ parametriza una recta.
+
+\item Existe un valor del n\'umero real $c$ para el cual la funci\'on $h(x,y)$ definida abajo es continua 
+\[ h(x,y)=\begin{cases}
+\frac{xy}{x^2+y^2}\text{, si $(x,y)\neq (0,0)$}\\
+c\text{, $(x,y) = (0,0)$}
+\end{cases}\]
+
+\end{enumerate}
+\end{enumerate}
+ 
+\end{document}

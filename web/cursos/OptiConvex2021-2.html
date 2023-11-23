@@ -1,0 +1,354 @@
+<html>
+</head><title>Optimizaci&oacuten Convexa:  Segundo Semestre 2021 </title></head>
+<body bgcolor=white text=black link=#FF6600 alink=#0099CC 
+vlink=#0099CC><font face="Trebuchet MS"><center>
+
+<font size="6"> <b>Optimizaci&oacuten Convexa</b><br> <p></p> 
+
+<font size="5"> </center> 
+
+<p> Este curso es una introducci&oacuten a la teor&iacutea y pr&aacutectica de la optimizaci&oacuten. Nos enfocaremos en problemas de optimizaci&oacuten convexa (i.e. problemas en que el conjunto factible y la funci&oacuten objetivo son convexos).</p> 
+
+Los objetivos de este semestre son: 
+<ul>
+<p><li> Familiarizarse con los tipos principales de problemas convexos bien estructurados asi como con la geometria de sus dominios (i.e. politopos, conos cuadr&aacuteticos y espectrahedros) asi como con los tipos de problemas que pueden formularse con cada uno de ellos.</li></p>
+
+<p><li> Familiarizarse con los principales resultados teoricos de la optimizacion convexa (dualidad, condiciones de optimalidad) </li></p>
+ 
+
+	
+</li></p>
+</ul>
+
+El texto principal del curso ser&aacuten las notas del instructor. Como referencia utilizaremos los siguientes textos:
+
+<ul>
+<p><li>(BV) Boyd S., Vandenberghe L. : "Convex Optimization"</li></p>
+<p><li>(BN) Ben Tal A., Nemirovski A.: "Lectures on modern convex optimization"</li></p>
+<p><li>(B) Barvinok S.: "A Course in convexity"</li></p>
+<p><li>(GLS) Grotschel M., Lovasz L., Schrijver A.: "Geometric algorithms and combinatorial optimization"</li></p>
+</ul>
+
+
+<p>
+La mayor parte de lo que aprender&aacuten en este curso ser&aacute el resultado de su propio trabajo en tres aspectos principales e iguales de importantes: Reflexion posterior a cada clase sobre los resultados presentados en ella, trabajar en los ejercicios asignados clase a clase y recopilados por los estudiantes (ver: </a> <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Exos.pdf" target="_blank">Ejercicios</a>) y trabajo en un proyecto.
+</ul>
+<p>
+Los criterios de evaluaci&oacuten del curso son:
+<ul>
+<p><li> Dos examenes parciales a realizarse en clase en las fechas especificadas abajo (25% C/U). Las preguntas de los examenes seran variaciones menores de los ejercicios asignados en el programa semanal.</li></p>
+<p><li> Proyecto: Tres entregas (5%, 20%, 25% resp.) siguiendo las 
+
+<A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Reglas_Proyecto_Optim_2021-2.pdf" target="_blank">Especificaciones del proyecto</A></a> en las fechas especificadas abajo.</li></p>
+<p><li> La aproximacion de la nota se hara redondeando la nota numerica a dos digitos decimales. NO se recibiran trabajos tarde y NO se permitira la presentacion de parciales en otras fechas salvo con incapacidad medica (por favor reserven desde hoy las fechas de parciales de abajo). </li></p>
+<p><li>  Este conjunto de <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Exos.pdf" target="_blank"> EJERCICIOS</A></a> se ir&aacute actualizando clase a clase. Util&iacutecelo para medir su aprendizaje.</li></p>
+
+</ul>
+<ul>
+<li><p> NOTA: SE HARAN ANUNCIOS EN ESTA PAGINA WEB DURANTE TODO EL SEMESTRE.</li></p>
+</li></ul>
+
+
+<font size="5"> </center> 
+
+
+<ul>
+<p> ACTIVIDADES CLASE A CLASE: 
+<table border="1">
+<tr>
+<td> Semana </td>
+<td> Tema </td>
+<td> Fecha </td>
+<td> Evaluaciones</td>
+<td> Contenido</td>
+
+
+
+<tr>
+<td> 1.1 </td>
+<td> Qu&eacute es la optimizaci&oacuten convexa? </td>
+<td> Agosto 10</td>
+<td> </td>
+<td> <a href=https://youtu.be/_I1HXapzHeA target="_blank">Video</a> y  <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Agosto_10_2021.pdf" target="_blank">PDF</a> </td>
+</tr>
+
+
+<tr>
+<td> 2.1 </td>
+<td> C&oacutemo hacer optimizaci&oacuten en Julia? </td>
+<td> Agosto 17</td>
+<td> </td>
+<td>  <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Instalar_Julia_JuMP.pdf" target="_blank">PDF</a> </td>
+</tr>
+
+
+<tr>
+<td> 2.2 </td>
+<td> Algunos conjuntos convexos </td>
+<td> Agosto 17</td>
+<td> </td>
+<td> <a href=https://youtu.be/k7IRmwx4cJA target="_blank">Video</a> y  <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Agosto_17_2021.pdf" target="_blank">PDF</a> </td>
+</tr>
+
+
+<tr>
+<td> 2.3 </td>
+<td> Ejemplos / OL en Julia </td>
+<td> Agosto 18</td>
+<td> </td>
+<td> <a href=https://youtu.be/1_8gKLlBjp0 target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Agosto_18_2021.pdf" target="_blank">PDF</a> y <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/intento_linear_clase.jl" target="_blank">.jl</a> </td>
+</tr>
+
+
+<tr>
+<td> 2.3 </td>
+<td> MaxFLow OL en Julia </td>
+<td> Agosto 24</td>
+<td> </td>
+<td> <a href=https://youtu.be/1_8gKLlBjp0 target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Agosto_24_2021.pdf" target="_blank">PDF</a> y <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/intento_MaxFlow_Clase.jl" target="_blank">.jl</a> </td>
+</tr>
+
+
+<tr>
+<td> 3.1 </td>
+<td> Programaci&oacuten de segundo orden </td>
+<td> Agosto 31</td>
+<td> </td>
+<td> <a href=https://youtu.be/KEoJMfDyoxw target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Agosto_31_2021.pdf" target="_blank">PDF</a> y <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/intento_SOCP_clase.jl" target="_blank">.jl</a> </td>
+</tr>
+
+
+<tr>
+<td> 3.2 </td>
+<td> Markowitz en Julia </td>
+<td> Agosto 31</td>
+<td> </td>
+<td> <a href=https://youtu.be/lRs2PLbN8zA target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Septiembre_1_2021.pdf" target="_blank">PDF</a> y <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Markowitz_SOCP_Julia.jl" target="_blank">.jl</a> </td>
+</tr>
+
+<tr>
+<td> 3.3 </td>
+<td> Programaci&oacuten lineal robusta como SOCP </td>
+<td> Septiembre 3</td>
+<td> </td>
+<td> <a href=https://youtu.be/70F1cdcjWfQ target="_blank">Video</a> y <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Septiembre_3_2021.pdf" target="_blank">PDF</a> </td>
+</tr>
+
+
+
+<tr>
+<td> 4.1 </td>
+<td> Programaci&oacuten semidefinida (Intro)</td>
+<td> Septiembre 7</td>
+<td> </td>
+<td> <a href=https://youtu.be/yPjU-uOhxoo target="_blank">Video</a> y <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Septiembre_7_2021.pdf" target="_blank">PDF</a> </td>
+</tr>
+
+
+<tr>
+<td> 4.2 </td>
+<td> Programaci&oacuten semidefinida y optimizaci&oacuten polinomial (p.1) </td>
+<td> Septiembre 8</td>
+<td> </td>
+<td> <a href=https://youtu.be/9Y6MJKF5Asg target="_blank">Video</a> y <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Septiembre_8_2021.pdf" target="_blank">PDF</a> </td>
+</tr>
+
+
+<tr>
+<td> 4.3 </td>
+<td> SDP en Julia </td>
+<td> Septiembre 10</td>
+<td> </td>
+<td> <a href=https://youtu.be/ZpHRb2xrfH4 target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Septiembre_10_2021.pdf" target="_blank">PDF</a> ,  <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Intro_SDP.jl" target="_blank">.jl</a> y  <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/intento_OptiPoly_1D.jl" target="_blank">.jl</a> </td>
+</tr>
+
+
+<tr>
+<td> 5.1 </td>
+<td> Programaci&oacuten semidefinida y optimizaci&oacuten polinomial (p.3)</td>
+<td> Septiembre 14</td>
+<td> </td>
+<td> <a href=https://youtu.be/5y9ZdJ1vK5Y target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Septiembre_14_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> </td>
+<td> </td>
+<td> Septiembre 20</td>
+<td> Entrega 1 Proyecto</td>
+</tr>
+
+
+
+
+<tr>
+<td> </td>
+<td> </td>
+<td> Septiembre 24</td>
+<td> Parcial 1 -- Clase del Viernes</td>
+</tr>
+
+<tr>
+<td> 6.1 </td>
+<td> Dualidad de normas </td>
+<td> Septiembre 28</td>
+<td> </td>
+<td> <a href=https://youtu.be/CFcKMddZQKs target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Septiembre_28_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> 6.2 </td>
+<td> Extension de Hahn-Banach</td>
+<td> Septiembre 29</td>
+<td> </td>
+<td> <a href=https://youtu.be/_Xpfeoj-wic target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Septiembre_29_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> 6.3 </td>
+<td> La funcion de Minkowski</td>
+<td> Octubre 1</td>
+<td> </td>
+<td> <a href=https://youtu.be/C25cyddYOe0 target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Octubre_1_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> 8.1 </td>
+<td> Separaci&oacuten de Hahn-Banach</td>
+<td> Octubre 13</td>
+<td> </td>
+<td> <a href=https://youtu.be/_455oZyUwzU target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Octubre_13_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> 8.2 </td>
+<td> Funci&oacuten de soporte, interior de convexos</td>
+<td> Octubre 15</td>
+<td> </td>
+<td> <a href=https://youtu.be/_dShPMrPHHs target="_blank">Video</a> </td>
+</tr>
+
+
+<tr>
+<td> 9.1 </td>
+<td> Conos convexos</td>
+<td> Octubre 19</td>
+<td> </td>
+<td> <a href=https://youtu.be/kZqr6DSDzsI target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Octubre_19_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> 9.2 </td>
+<td> Optimizaci&oacuten c&oacutenica</td>
+<td> Octubre 20</td>
+<td> </td>
+<td> <a href=https://youtu.be/iFBqUYSDrc4 target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Octubre_20_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> 10.1 </td>
+<td> Dualidad c&oacutenica (parte 1)</td>
+<td> Octubre 26</td>
+<td> </td>
+<td> <a href=https://youtu.be/9LfNhbjp0SM target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Octubre_26_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> 10.2 </td>
+<td> Dualidad c&oacutenica (parte 2)</td>
+<td> Octubre 27</td>
+<td> </td>
+<td> <a href=https://youtu.be/tZ8NWHMA9QI target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Octubre_27_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> 10.3 </td>
+<td> Dualidad c&oacutenica (parte 3)</td>
+<td> Octubre 29</td>
+<td> </td>
+<td> <a href=https://youtu.be/HSwKWdLK1Bs target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Octubre_29_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td>  </td>
+<td> Dualidad c&oacutenica (parte 4)</td>
+<td> Noviembre 9</td>
+<td> </td>
+<td> <a href=https://youtu.be/w-OiosO-Dz4 target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Noviembre_9_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td>  </td>
+<td> Aplicaciones de dualidad (p1)</td>
+<td> Noviembre 16</td>
+<td> </td>
+<td> <a href=https://youtu.be/9MbDjvHAYJc target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Noviembre_16_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td>  </td>
+<td> Aplicaciones de dualidad (p2)</td>
+<td> Noviembre 17</td>
+<td> </td>
+<td> <a href=https://youtu.be/Fy1qDuJdols target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Noviembre_17_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+<tr>
+<td>  </td>
+<td> Aplicaciones de dualidad (p3)</td>
+<td> Noviembre 19</td>
+<td> </td>
+<td> <a href=https://youtu.be/crMP7Ent0Cc target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Noviembre_19_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+<tr>
+<td>  </td>
+<td> Problemas de momentos</td>
+<td> Noviembre 23</td>
+<td> </td>
+<td> <a href=https://youtu.be/ayXNNE8DOy8 target="_blank">Video</a> , <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Noviembre_23_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+<tr>
+<td>  </td>
+<td> Metodos del subgradiente</td>
+<td> Noviembre 24</td>
+<td> </td>
+<td> <A href="http://wwwprof.uniandes.edu.co/~mvelasco/web/cursos/OptiConvexPDFs/Notas_Noviembre_24_2021.pdf" target="_blank">PDF</a></td>
+</tr>
+
+
+<tr>
+<td> </td>
+<td> </td>
+<td> Noviembre 12</td>
+<td> Parcial 2 -- Clase del Viernes + Entrega 2 Proyecto</td>
+</tr>
+
+<tr>
+<td> </td>
+<td> </td>
+<td> Fecha examen final </td>
+<td> Examen Final + Entrega 3 Proyecto </td>
+</tr>
+</table>
+
+
+
+</ul>
+
+
+
+

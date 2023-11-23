@@ -1,0 +1,68 @@
+Semana 1: [Fuente: Notas de tensores]
+		Qu&eacute es un tensor? (Productos tensoriales como hipercubos de numeros, como objetos libres de coordenadas y como representaciones
+		representaci&oacuten mediante bases y sin ellas)
+		Muchos ejercicios:
+			-Propiedades universales
+			-Flattenings (con y sin coordenadas)
+			-Tensores con propiedades adicionales: 
+			Productos exteriores y simétricos (Ejercicios)
+
+Semana 2: [Fuentes: [L1], [L2], [Kolda]]
+		Ejemplos de tensores: 
+			-Matrices como tensores (concepto clave de rango), Matrices simétricas como tensores simétricos
+			-Concepto de rango de un tensor, maneras en que difiere del rango de matrices.
+			-Ejemplo: El tensor de multiplicación de matrices (algoritmo de Strassen)
+			(Ejercicio 2.4.2)
+			-Definición del Rango de tensores y del rango de tensores generalizado: El problema del Waring Rank
+
+Semana 3: 
+		Más ejemplos de tensores: Clasificación de 2 x b x c [L1: Chapter 3] 
+		A geometric view of Strassen's algorithm?
+
+Semana 4: [Kolda]
+		Problema de identificabilidad
+		Motivación: Algebraic statistics [Elizabeth Gross Simons lecture]
+		CP decompositions [Kolda, Section 3.4 -- Comon?] 
+------------------- Tensor geometry ----------------------------------------------
+Semana 6: [Geometría Proyectiva 1] -- [Fuentes: Notas + Landsberg]
+		Geometría proyectiva.
+		Qué es el espacio proyectivo?
+		Subespacios proyectivos (intersección de subespacios proyectivos)
+
+Semana 7: [Geometría Proyectiva 2]
+		Variedades algebraicas proyectivas (clausura de Zariski)
+		Espacios proyectivos de tensores, tensores de rango 1. 
+		Ejemplo: Las variedades de Segre (productos de variedades)
+		Proyecciones, grado. [Harris]
+
+Semana 8: [L1, Chapter 5]
+		Espacios tangentes de variedades proyectivas [L1, Chapter 4]
+		Variedades secantes de orden superior
+		Border rank de un tensor.
+
+Semana 9,10:
+		https://simons.berkeley.edu/talks/luca-chiantini-2014-11-10
+		Lema de Terracini, contact locus.
+		[CGO1: What is a Secant variety, estimated dimension of secant varieties, Terracini's Lemma]
+			
+Semana 11,12: [CG02: Secant Varieties of the Veronese, Waring rank, Alexander Hirschowitz Theorem]
+
+Semana 13,14: 
+		[CG03: Apolarity Lemma, how to determine Waring rank]
+		[Blekherman: https://arxiv.org/pdf/1205.3257.pdf]
+
+Semana 15,16: [CG04: Equations for secants of the Segre varieties]
+
+
+
+Ejercicios: Les envio los ejercicios que discutiremos las próximas clases.
+
+Nicolás 8.1,8.4
+Jose Miguel 9.3
+Jose Luis 10.3
+Christian 11.1
+Sergio 11.5
+Jerónimo 12.1 + 13.1
+Marcela 12.2-12.3
+Hector 10.1-10.2
+Diego Romero 7.4-7.5

@@ -1,0 +1,92 @@
+\documentclass[usepdftitle=false]{beamer}
+\usetheme{Berkeley}
+
+
+
+\title[]{Vectorial Virtual -- Taller 3, parte 3: Teoremas de Stokes y Gauss.}
+
+\date{Mayo 2020}
+
+\begin{document}
+\maketitle
+\begin{frame}{Problema 11: (Teorema de Stokes)}
+
+Sea $H(x,y,z)=x^2y\hat{i} + \frac{x^3}{3}\hat{j} + xy\hat{k}$ y sea $C$ la curva de intersecci\'on del paraboloide hiperb\'olico $z=y^2-x^2$ y el cilindro $x^2+y^2=1$ orientado en la direcci\'on de las manecillas del reloj visto desde arriba:
+
+\begin{enumerate}
+\item Grafique el paraboloide hiperb\'olico y el cilindro. Trace la curva de intersecci\'on.
+\item Encuentre una parametrizaci\'on para la curva $C$. 
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Problema 12: (Teorema de Stokes)}
+
+Calcule el trabajo hecho por el campo de fuerza
+\[F(x,y,z) = \left(x^x+z^2, y^y+x^2, z^z+y^2\right)\]
+cuando una part\'icula se mueve bajo su influencia alrededor del borde de la parte de la esfera $x^2+y^2+z^2=4$ que se encuentra en el primer octante en direcci\'on contraria a las manecillas del reloj vista desde arriba.
+
+\end{frame}
+
+\begin{frame}{Problema 13: (Teorema de la divergencia)}
+Considere el campo vectorial $H$ dador por
+\[H(x,y,z)=\left(\sin(x)\cos^2(y), \sin^3(y)\cos^4(z), \sin^5(z)\cos^6(y)\right)\]
+
+\begin{enumerate}
+\item Haga un dibujo del campo vectorial
+(usando por ejemplo \url{https://www.geogebra.org/m/u3xregNW})
+
+\item Calcule el flujo de $H$ hacia adentro del cubo definido por los seis planos $x=0$, $x=\frac{\pi}{2}$, $y=0$, $y=\frac{\pi}{2}$, $z=0$, $z=\frac{\pi}{2}$.
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Problema 14:}
+
+Considere el campo vectorial $F(x,y,z)=(3xy^2, xe^z, z^3)$ y sea $E$ el volumen encerrado por el cilindro $y^2+z^2=1$ 
+y los planos $x=-1$ y $x=2$.
+
+\begin{enumerate}
+\item Calcule el flujo de $F$ a trav\'es de la frontera de $E$ hacia afuera.
+
+\item La frontera de $E$ consiste de tres partes: la superficie cil\'indrica $S$ y las "tapas" $x=-1$ y $x=2$. Calcule el flujo de $F$ a trav\'es de $S$ hacia afuera.
+
+\end{enumerate}
+
+
+
+\end{frame}
+
+\begin{frame}{Problema 15: Teorema de Gauss}
+Sea $E$ el campo el\'ectrico generado en $\mathbb{R}^3$ generado por una carga puntual unitaria puesta en el origen 
+\[E(\vec{x})=\frac{\vec{x}}{\|\vec{x}\|^3}\]
+
+\begin{enumerate}
+\item Haga un dibujo del campo vectorial, 
+(por ejemplo usando \url{https://www.geogebra.org/m/u3xregNW}).
+\item Verifique que el campo tiene divergencia cero $\nabla\cdot E=0$.
+\item Calcule el flujo de $E$ a trav\'es de la esfera unitaria orientada hacia afuera parametrizando la esfera.
+\item Calcule el flujo de $E$ hacia adentro del cubo $[-2,2]\times [-2,2]\times [-2,2]$ (sugerencia: Use el Teo de Gauss).
+\item Es $E$ un campo conservativo?\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Problema 16: (Verdadero o Falso)}
+
+Verdadero o Falso: Para cada una de las siguientes afirmaciones de una justificaci\'on (si cree que es $V$) \'o un contraejemplo (si cree que es $F$).
+
+\begin{enumerate}
+\item Si $\nabla\cdot H=0$ entonces el campo vectorial $H$ es conservativo.
+\item Si $\nabla\times H=0$ entonces el campo vectorial $H$ es conservativo.
+\item Si $H=\nabla \times F$ entonces $H$ es conservativo.
+\item Si $\nabla\cdot F=0$ entonces el trabajo realizado por $F$ a lo largo de toda curva cerrada es cero.
+\item $\nabla \times \nabla u=\vec{0}$ para 
+toda funcion escalar diferenciable $u:\mathbb{R}^3\rightarrow \mathbb{R}$.
+\item Si $H$ es conservativo entonces ${\rm div}(H)=0$.
+\end{enumerate}
+
+\end{frame}
+\end{document}
+
+

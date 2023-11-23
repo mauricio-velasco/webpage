@@ -1,0 +1,189 @@
+\documentclass[12pt]{article}
+\oddsidemargin 0.0in
+\topmargin 0.0in
+\headheight 0.0in
+\textwidth 7.0 in
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage {amssymb}
+\usepackage {stmaryrd}
+\usepackage {graphicx}
+\usepackage{graphics}
+\usepackage[all]{xy}
+\usepackage{amsrefs}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{construction}{Construction}
+\newtheorem{remark}{Remark}
+\newtheorem{ex}{Example}
+\newcommand{\RR}{\mathbb{R}}
+
+\begin{document}
+\begin{center}
+\begin{Large}
+{\bf C\'alculo Vectorial -- Parcial Supletorio}\\ 
+\end{Large}
+{Marzo 11 de 2020.}
+\bigskip
+\\
+\begin{tabular}{ll}
+Nombre: & \dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\dots\\
+\end{tabular}
+\bigskip
+
+\begin{large}
+
+\bigskip
+{\bf INSTRUCCIONES -- LEA ESTO ANTES DE EMPEZAR}
+\end{large}
+\end{center}
+\begin{itemize}
+\item{ Este examen tiene 4 problemas.}
+\item{Muestre su trabajo. Para recibir todo el credito debe mostrar su razonamiento y los pasos que lo llevaron a la respuesta final y estos deben ser escritos claramente. Si necesita m\'as espacio escriba en la parte de atras del ejercicio anterior pero aseg\'urese de identificar claramente a que ejercicio corresponde cada pagina.}
+\item{Este es un examen individual y con libro cerrado. Su Celular debe estar {\bf apagado} (si no puede apagarlo por motivos de urgencia mayor por favor comun\'iquelo a su profesor).}
+
+\item{Este examen tiene una duracion de 80 mins.}
+\end{itemize}
+Se espera integridad academica de todos los estudiantes. Entendiendo esto, declaro que no voy a dar, usar o recibir ayuda no autorizada durante este examen.\\
+\bigskip
+\bigskip
+\bigskip
+\noindent Firma del estudiante:\\
+\hline
+\begin{center}
+\begin{large}
+\bigskip 
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c}
+\hline
+Problema $\sharp$ & 1. & 2. & 3. & 4. & TOTAL\\
+\hline
+Puntos ganados & & & & &\\
+\hline 
+\end{tabular}
+\end{large}
+\end{center}
+\newpage
+
+\begin{enumerate}
+
+\item{{\bf [15 pts]} La altura sobre el nivel del mar del punto $(x,y)$ medida en $Km$ esta dada por $h(x,y)=x^2+y^2-4xy$. 
+\begin{enumerate}
+\item  {\bf [10 pts]} Encuentre los lugares de la regi\'on $R=\{(x,y): x^2+y^2\leq 1\}$ con altura m\'axima sobre el nivel del mar.
+\item {\bf [5 pts]} Demuestre que el punto $(0,0)$ es un punto cr\'itico de $h$ y clasif\'iquelo como m\'inimo local, m\'aximo local o punto de silla justificando claramente su respuesta.
+
+\end{enumerate}
+\newpage
+
+\item {\bf [10 pts]} Sea $h(x,y,z)=x+2y+z$.
+
+\begin{enumerate}
+\item {\bf [2 pts]} Dibuje el conjunto de nivel $2$ de la funci\'on $h$.
+\item {\bf [8 pts]} Encuentre los valores m\'aximos y m\'inimos que alcanza la funci\'on $h$ en la esfera de radio $\sqrt{3}$ centrada en el origen en $\RR^3$. 
+\end{enumerate}
+
+\newpage
+
+\item {\bf [10 pts]} La temperatura en grados cent\'igrados del punto $(x,y)$ esta dada por \[T(x,y)=\ln(1+x+2y).\]
+\begin{enumerate}
+\item {[\bf 4 pts]} Encuentre la funci\'on lineal $\ell(x,y)$ que mejor aproxima a $T$ cerca del origen.
+\item {[\bf 6 pts]} Encuentre la funci\'on cuadr\'atica $q(x,y)$ que mejor aproxima a $T$ cerca del origen.
+\end{enumerate}
+\newpage
+
+\item {\bf [15 pts]} Sean $F$ y $G$ los campos vectoriales en $\RR^2$ dados por $F(x,y)=(1,y)$ y $G(x,y)=(-y,x^2)$.  
+\begin{enumerate}
+\item {\bf [7 pts]} Defina $H(x,y):=G(F(x,y))$.
+\begin{enumerate}
+\item {\bf [2 pts]} Qu\'e dimensiones $m\times n$ debe tener la matriz $DH(0,0)$?
+\item {\bf [5 pts]} Calcule $DH(0,0)$ {\it utilizando la regla de la cadena}.
+\end{enumerate}
+\item {\bf [8 pts]} Verifique que la curva parametrizada $\sigma(t)=(t,e^t)$ es la l\'inea de campo de $F$ que empieza en $(0,1)$.
+\end{enumerate}
+}
+\end{enumerate}
+
+
+\end{document}
+
+\item{{\bf [15 pts]} Sea $h(x,y)=xy$ y sea $D=\{(x,y): x^2+y^2\leq 1\}$. 
+\begin{enumerate}
+\item{ {\bf [5 pts]} Dibuje la regi\'on $D$ y los conjuntos de nivel $1$ y $-1$ de $h$.}
+\item{ {\bf [10 pts]} Encuentre los lugares $(x,y)$ en $D$ donde $h(x,y)$ alcanza su valor m\'inimo.}
+\end{enumerate}
+}
+\newpage
+\item{{\bf [10 pts]} Sea $\sigma$ la curva parametrizada en $\RR^3$ dada por
+\[\sigma(t)=(\cos(t),\sin(t),t)\text{ con $0\leq t\leq \pi$}.\]
+\begin{enumerate}
+\item {\bf [5 pts]} Encuentre el vector tangente de la curva $\sigma$ en el punto $\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2},\frac{\pi}{4}\right)$.
+\item {\bf [5 pts]} Suponga que $T(x,y,z)=x^2+y^2-z^2$. Calcule la derivada direccional de $T$ en el punto $\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2},\frac{\pi}{4}\right)$ and la direcci\'on tangente a la curva $\sigma$ en ese punto.
+\end{enumerate}
+}
+
+\newpage
+\item{{\bf [10 pts]} Sea $S\subseteq \RR^3$ la superficie definida por la ecuaci\'on $e^{x^2+y^2}+\cos(z)=0$.
+\begin{enumerate}
+\item {\bf [5 pts]} Defina una funci\'on $G:\RR^3\rightarrow \RR$ que tenga a $S$ como uno de sus conjuntos de nivel. Justifique su respuesta.
+\item {\bf [5 pts]} Encuentre la ecuaci\'on del plano tangente a $S$ en el punto $(0,0,\pi)$ justificando su razonamiento mediante la parte $(a)$.
+\end{enumerate}
+}
+\newpage
+
+
+\item{{\bf [15 pts]} Sea $g(x,y)=e^{2y}\cos(x)-2y$. 
+\begin{enumerate}
+\item {\bf [10 pts]} Calcule la mejor aproximaci\'on cuadr\'atica para $g(x,y)$ centrada en $(0,0)$. Escriba su respuesta como un polinomio cuadr\'atico en $x,y$.
+\item {\bf [5 pts]} Clasifique el punto $(0,0)$ como m\'inimo local, m\'aximo local o punto de silla de $g$.
+
+\end{enumerate}
+
+}
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
+
+
+
+\item{ Sea $K$ un campo. Recuerde que una {\it valuaci\'on discreta} en $K$ es una funci\'on $\nu: K^{*}\rightarrow \mathbb{Z}$ que satisface: $(1)$ $\nu(ab)=\nu(a)+\nu(b)$ para todo $a,b\in K^*$.
+$(2)$ $\nu$ es sobreyectiva y $(3)$ $\nu(x+y)\geq \min\left(\nu(x),\nu(y))$ para todos $x,y\in K^*$ tal que $x+y\neq 0$.
+\begin{enumerate}
+\item {\bf 4 pts.} Sea $R=\{0\}\cup \{x\in K: \nu(x)\geq 0\}$. Demuestre que $R$ es un subanillo de $K$ que contiene a la identidad ($R$ se llama el anillo de valuaci\'on de $\nu$).
+\item {\bf 3 pts.} Demuestre que para todo $x\in K^*$ al menos un elemento de $\{x,x^{-1}\}$ esta en $R$.
+\item {\bf 3 pts.} Demuestre que $U(R)=\{x\in K^*: \nu(x)=0\}$.
+\end{enumerate}
+}
+\newpage
+\item{Sea $k=\mathbb{Z}/2\mathbb{Z}$.
+\begin{enumerate}
+\item {\bf 3 pts.} Demuestre que $p:=x^2+x+1$ es irreducible en $k[x]$.
+\item {\bf 3 pts.} Demuestre que $K:=k[x]/(p)$ es un campo con $4$ elementos.
+\item {\bf 4 pts.} Escriba la tabla de multiplicaci\'on de $K$.
+\end{enumerate}
+} 
+\newpage
+\item{{\bf 10 pts.} Demuestre que $x^m+1$ es irreducible en $\mathbb{Q}[x]$ si y solo si $m=2^n$ para algun $n\in \mathbb{N}$.}
+\newpage
+\item{Sean $I,J$ ideales de un anillo con identidad $R$.
+\begin{enumerate}
+\item {\bf 2 pts.} Defina los conjuntos $I+J$ e $IJ$.
+\item {\bf 4 pts.} Demuestre que $I+J$ es el ideal m\'as peque\~no que contiene a $I$ y a $J$.
+\item {\bf 4 pts.} Demuestre que, si $I+J=(1)$ entonces $IJ=I\cap J$.
+\end{enumerate}
+}
+\newpage
+\item (El problema de precio de estampillas). Sean $a,b$ enteros positivos y primos relativos. 
+\begin{enumerate}
+\item {\bf 5 pts.} Demuestre que todo entero $N$ suficientemente grande puede escribirse como una combinaci\'on lineal de $a$ y $b$ con coeficientes enteros y {\it no-negativos}.
+\item {\bf 5 pts.} Demuestre que $ab-a-b$ no puede escribirse de esta manera.
+
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+

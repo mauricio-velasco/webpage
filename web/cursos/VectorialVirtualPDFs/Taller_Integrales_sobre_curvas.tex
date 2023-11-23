@@ -1,0 +1,151 @@
+\documentclass[usepdftitle=false]{beamer}
+\usetheme{Berkeley}
+
+
+
+\title[]{Taller: Integrales (de ambos tipos) sobre curvas}
+
+\date{}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Ejercicio 6}
+Un cable tiene la forma de un semic\'irculo de radio $5$ (concretamente la parte con $y\geq 0$ de $x^2+y^2=25$). Suponga que la densidad del cable $\rho(x,y)$ es igual a la distancia entre $(x,y)$ y la recta $y=10$. Encuentre:
+
+\begin{enumerate}
+\item La masa total del cable.
+\item Las coordenadas del centro de masa.
+\item El momento de inercia del cable alrededor de un eje perpendicular al plano $(x,y)$ y que pasa por el punto $x=1$.
+\item (Verdadero o Falso) El centro de masa de un objeto s\'olido siempre esta adentro del objeto.
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Ejercicio 7: Curvas parametrizadas a trozos}
+
+Queremos construir una cerca compuesta de los siguientes segmentos: 
+
+\begin{itemize}
+\item El pedazo de la par\'abola $y=x^2$ en el segmento que va de $(0,0)$ a $(10,100)$.
+\item Los segmentos de recta que unen  $(10,100)$ con $(10,110)$ y $(10,110)$ con $(-10,1)$ y
+\item El segmento que va de $(-10,1)$ a $(0,0)$ siguiendo la par\'abola $y=\frac{x^2}{100}$.
+\end{itemize}
+
+\begin{enumerate}
+\item Haga un dibujo de la cerca.
+\item Calcule la longitud de alambre que necesitamos para construir la cerca.
+\end{enumerate}
+
+
+
+\end{frame}
+
+\begin{frame}{Ejercicio 8: Longitud de arco de la rosa de cuatro p\'etalos.}
+Sea $C$ la curva dada en coordenadas polares mediante $r(\theta)=\sin(2\theta)$.
+
+\begin{enumerate}
+\item Encuentre una parametrizaci\'on en coordenadas cartesianas de la curva $C$. Explique su respuesta.
+
+\item Utilizando la parte $(a)$ encuentre una f\'ormula para la longitud de arco de un p\'etalo de la  rosa de arriba. No es necesario evaluar la integral que obtenga sino s\'lamente expresar la longitud de la curva c\'omo una integral $d\theta$.
+\end{enumerate}
+
+ 
+\end{frame}
+
+
+\begin{frame}{Ejercicio 9}
+Considere el campo vectorial \[H(x,y)=(2xy^2+3x^2, 2x^2y+3y^2)\]
+en el plano
+
+\begin{enumerate}
+\item Verifique que $H$ es un campo gradiente.
+\item Encuentre un potencial escalar $u(x,y)$ para $H$.
+\item Calcule la integral de l\'inea $\int_C H ds$
+donde $C$ es la espiral $\sigma(t)=(1+ t\cos(t), t\sin(t))$ para $0\leq t\leq 2\pi$. 
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Ejercicio 10}
+
+Sea $C$ el c\'irculo unitario centrado en direcci\'on de las manecillas del reloj en el origen en $\mathbb{R}^2$. 
+
+\begin{enumerate}
+\item Calcule 
+
+\[\int_C \frac{x}{x^2+y^2}dy-\frac{y}{x^2+y^2}dx=\] 
+
+\item Calcule $\nabla\times G$ donde $G$ es el campo vectorial que integramos en la parte $(1)$
+
+\item (Verdadero o Falso) Si $G$ es cualquier campo vectorial que satisface $\nabla\times G=0$ entonces $G$ es conservativo. Justifique su respuesta.
+
+\end{enumerate}
+
+
+\end{frame}
+
+
+\end{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Ejercicio 1}
+
+Sea $E$ un cono circular recto con radio de la base $R$ y altura $H$. Asuma que $E$ tiene como eje de simetr\'ia al eje $z$, que la base circular esta apoyada sobre el plano $(x,y)$ y que la punta esta hacia arriba. Encuentre la posici\'on del centro de masa $(\overline{x}, \overline{y}, \overline{z})$ del cono, asumiendo que este tiene densidad constante. (Nota: La respuesta debe ser una funci\'on de $R$ y $H$). 
+
+\end{frame}
+
+\begin{frame}{Ejercicio 2 (Distribuci\'on Gaussiana en dos dimensiones)}
+
+Sea $f(x,y)= \frac{1}{2\pi} e^{-\frac{x^2+y^2}{2}}$.
+\begin{enumerate}
+\item Calcule $\iint_Df(x,y)dA$ donde $D$ es el disco de radio $A$ centrado en el origen (Nota: La respuesta depende de $A$).
+\item Verifique que, cuando $A\rightarrow \infty$ la cantidad calculada en la parte $(a)$ converge a $1$.
+\item Demuestre, utilizando lo que verifico en la parte $(2)$ que $f(x,y)$ es la densidad de probabilidad de un vector aleatorio $(X,Y)$.
+\item Calcule $\mathbb{E}(X)$, $\mathbb{E}(Y)$, ${\rm Var}(X)$ y ${\rm Cov}(X,Y)$.
+ 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Ejercicio 3: Momentos de inercia de cilindros}
+
+Calcule la funci\'on de densidad y el momento de inercia, alrededor de su eje de simetr\'ia de los siguientes s\'olidos:
+
+\begin{enumerate}
+\item Un cilindro s\'olido de masa $M$, radio $R$ y altura $L$, con densidad constante
+\item Un cilindro s\'olido de masa $M$, radio $R$ y altura $L$, con densidad proporcional a $r$ (i.e. a la distacia al eje de simetr\'ia).
+\iem Un anillo con masa $M$ radio iterior $\frac{R}{2}$, radio exterior $R$ y altura $L$ con densidad constate. 
+\end{enumerate}
+Nota: Las respuestas son funciones de algunas de las variables $M,R$ y $L$.
+\end{frame}
+
+\begin{frame}{Ejercicio 4: Momentos de inercia de esferas}
+
+Calcule la funci\'on de densidad y el momento de inercia, alrededor de un eje que pasa por el centro de los siguientes s\'olidos:
+
+\begin{enumerate}
+\item Una esfera s\'olida de masa $M$ y radio $R$, con densidad constante
+\item Un esfera s\'olida de masa $M$ y radio $R$  con densidad proporcional a $\rho$ (i.e. a la distacia al origen).
+\iem Un casquete esf\'erico con masa $M$, radio interior $\frac{R}{2}$ y radio exterior $R$ con densidad constate. 
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Ejercicio 5: Roller Derby}
+
+Si hacemos una carrera entre los objetos de los ejercicios $3$ y $4$ (todos con masa $M$ y radio $R$) haciendo que desciendan sobre un plano inclinado rodando sin deslizarse, en qu\'e orden llegan a la meta? Argumente matem\'aticamente su respuesta usando las f\'ormulas que calculamos en la magistral.
+
+\end{frame}
+
+
+
+
+\end{document}

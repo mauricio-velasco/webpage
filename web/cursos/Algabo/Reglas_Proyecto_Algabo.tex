@@ -1,0 +1,108 @@
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\newtheorem{theorem}{Teorema.}
+\newtheorem{lemma}[theorem]{Lema.}
+\newtheorem{corollary}[theorem]{Corolario.}
+\newtheorem{definition}[theorem]{Definici\'on:}
+\newtheorem{example}[theorem]{Ejemplo:}
+\newtheorem{problema}[theorem]{Problema:}
+\newtheorem{remark}[theorem]{Observaci\'on:}
+
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+%\usetheme{default}
+
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\qq}{\mathbb{Q}}
+
+\usepackage{tikz, tikz-3dplot}
+
+\definecolor{cof}{RGB}{219,144,71}
+\definecolor{pur}{RGB}{186,146,162}
+\definecolor{greeo}{RGB}{91,173,69}
+\definecolor{greet}{RGB}{52,111,72}
+
+\date{}
+
+\begin{document}
+\title{REGLAS DEL PROYECTO LONGITUDINAL\\ CURSO DE ALGORITMOS AVANZADOS}
+\author{Mauricio Velasco}
+\maketitle
+\section{Entregables del Proyecto Longitudinal.}
+
+Cada proyecto consiste en la elaboraci\'on de dos entregables: Un {\it demo interactivo} y un documento de {\it sustento te\'orico} acerca alguno de los algoritmos del curso. 
+
+\noindent
+El {\it demo interactivo} debe:
+\begin{enumerate}
+\item Permitir que el usuario ingrese los datos de entrada del algoritmo (de forma c\'omoda, ya sea mediante una interfaz desarrollada por uds. con este fin \'o mediante el uso de hojas tipo json/excel).
+\item Ejecutar el algoritmo de manera correcta sobre los datos de entrada dados.
+\item Visualizar el resultado del algoritmo.
+\item Mostrar una explicaci\'on de los pasos principales del mismo.
+\item Ser codificado en su totalidad por los estudiantes del curso en un repositorio de github (puede usar cualquier fuente adicional pero la totalidad del c\'odigo debe estar en el repositorio).
+\end{enumerate}
+Como referente de lo que se busca ver las p\'aginas 
+ \url{https://www.redblobgames.com/articles/visibility/} (mover el c\'irculo amarillo que aparece al final) y \url{https://ncase.me/sight-and-light/}.\\
+Los ejemplos anteriores fueron hechos con {\rm vue.js} (ver detalles en \url{https://www.redblobgames.com/making-of/circle-drawing/}) pero para su implementaci\'on pueden usar la infraestructura que quieran. Una opci\'on sencilla es Jupyter Notebooks (ver \url{https://hex.tech/blog/beginners-guide-to-python-notebooks/} y \url{https://www.dataquest.io/blog/jupyter-notebook-tutorial/}).
+\newpage
+Por otro lado el {\it Documento de sustento te\'orico} del proyecto debe:
+\begin{enumerate}
+\item Describir el problema de manera matem\'aticamente precisa.
+\item Describir el algoritmo utilizado de manera matem\'aticamente precisa.
+\item Contener una demostraci\'on de la correcci\'on del algoritmo utilizado \'o una demostraci\'on de la validez de alguna cota de complejidad para el algoritmo.
+\item Contener una discusi\'on de aplicaciones potenciales del algoritmo a problemas de inter\'es real (idealmente en el contexto nacional Uruguayo \'o regional).
+\item Tener una presentaci\'on profesional (y en particular debe ser escrito en LaTex).
+\end{enumerate}
+Como inspiraci\'on acerca de la manera en la que el documento debe ser escrito, el formato, profundidad t\'ecnica, etc. ver la secci\'on {\it What is...?} de la revista Notices of the American Mathematical Society. Por ejemplo \url{https://finmath.stanford.edu/~cgates/PERSI/papers/what-is.pdf} o cualquier otro de la lista \url{http://arminstraub.com/math/what-is-column} que sea de su inter\'es.
+
+
+
+\section{Reglas y criterios de evaluaci\'on.}
+El proyecto es un trabajo en grupo longitudinal a ser realizado durante todo el semestre. Debe cumplir las siguientes reglas:
+
+\begin{enumerate}
+
+\item Todo grupo debe ser de $3$ \'o $4$ estudiantes.
+\item El algoritmo a tratar durante el proyecto es escogido por los estudiantes (ver algunos temas posibles sugeridos en la secci\'on siguiente).
+\item La evaluaci\'on del proyecto consistir\'a de tres entregas (y la nota de cada entrega ser\'a la misma para todos los integrantes del grupo). Las entregas ocurrir\'an en las fechas asignadas en la p\'agina web del curso y estar\'an distribuidas as\i:
+\begin{enumerate}
+\item Entrega 1 (Inicios de semestre): Cada grupo debe entregar un documento con los nombres de los integrantes, el tema escogido y al menos dos referencias bibliogr\'aficas que hayan consultado sobre el tema.
+\item Entrega 2: (Mediados de semestre) Cada grupo hace una presentaci\'on oral de 20 mins (con slides) mostrando a sus compa\~neros el estado actual de su desarrollo en el proyecto (tanto del demo como del documento te\'orico), enfatizando los logros ya obtenidos y las dificultades encontradas durante el desarrollo. La asistencia a las presentaciones de sus compa\~neros es obligatoria pues esperamos crear un ambiente que permita dar feedback constructivo a otros grupos.
+\item Entrega 3: (Final del semestre) Cada grupo hace una presentaci\'on oral de 20 mins mostrando a sus compa\~neros versiones finales del proyecto (tanto del demo como del documento te\'orico).  Adicionalmente cada grupo debe entregar al instructor el documento te\'orico (en .pdf enviado por correo) y el demo (mediante el link de github).
+\end{enumerate}
+\end{enumerate}
+
+\section{Posibles proyectos sugeridos}
+En esta secci\'on escribo algunas direcciones sugeridas en las que podr\'ian dirigir su proyecto.  
+\begin{enumerate}
+\item Topological sorting de DAGs y sus aplicaciones \url{https://en.wikipedia.org/wiki/Topological_sorting}.
+\item Escriba un programa que proponga y resuelva Sudokus \'o algunas de sus variantes \url{https://en.wikipedia.org/wiki/Sudoku}. 
+\item Resolviendo laberintos con Dijkstra vs con $A^*$ (comparar los dos) \url{https://towardsdatascience.com/solving-mazes-with-python-f7a412f2493f} y \url{http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html}.
+\item El modelo de asignaci\'on de escuelas p\'ublicas en la ciudad de Nueva York se basa en encontrar un {\it stable matching}. C\'omo funciona este algoritmo y qu\'e aplicaciones de matching se les ocurren en el Uruguay? Ver  
+\url{https://icerm.brown.edu/video_archive/?play=3027} NOTA: Este es un tema de investigaci\'on activo muy interesante. El link es una clase que Yuri Faenza di\'o en Enero 2023 en ICERM. Ver tambien \url{https://project.dke.maastrichtuniversity.nl/easss/wp-content/uploads/2018/07/EASSS_Tutorial.Stable_Matchings.Web_.pdf}
+\item Cu\'al es el camino m\'as corto para recorrer todas las ciudades del Uruguay? Usar branch-and-bound para resolver el TSP en el mapa de Uruguay actualizando \url{https://www.math.uwaterloo.ca/tsp/world/countries.html}, por ejemplo icorporando los tiempos de googleMaps. Ver tambien \url{https://www.math.uwaterloo.ca/tsp/data/art/} para otras posibilidades.
+\item Analizar alguna versi\'on del algoritmo de Viterbi y alguna de sus aplicaciones \url{https://en.wikipedia.org/wiki/Viterbi_algorithm}
+\item Algoritmos gen\'eticos para resolver el Vehicle Routing Problem (VRP) \url{https://pubsonline.informs.org/doi/10.1287/opre.1120.1048}. Qu\'e aplicaciones podr\'ian tener los VRPs en Uruguay?
+\item Construya un algoritmo que resuelva un cubo de Rubik de manera \'optima formul\'andolo como un problema de distancia m\'inima en grafos. Ver \url{https://web.mit.edu/sp.268/www/rubik.pdf}.    
+\end{enumerate}
+NOTA: Las de arriba son s\'olo algunas sugerencias de direcciones posibles. Si\'entanse en la libertad de dirigir el proyecto hacia cualquier algoritmo de su inter\'es relacionado con el curso (est\'e o no en la lista de arriba). 
+
+\end{document}
+

@@ -1,0 +1,106 @@
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\newtheorem{theorem}{Teorema.}
+\newtheorem{lemma}[theorem]{Lema.}
+\newtheorem{corollary}[theorem]{Corolario.}
+\newtheorem{definition}[theorem]{Definici\'on:}
+\newtheorem{example}[theorem]{Ejemplo:}
+\newtheorem{problema}[theorem]{Problema:}
+\newtheorem{remark}[theorem]{Observaci\'on:}
+
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+%\usetheme{default}
+
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\qq}{\mathbb{Q}}
+
+\usepackage{tikz, tikz-3dplot}
+
+\definecolor{cof}{RGB}{219,144,71}
+\definecolor{pur}{RGB}{186,146,162}
+\definecolor{greeo}{RGB}{91,173,69}
+\definecolor{greet}{RGB}{52,111,72}
+
+
+\begin{document}
+\title{PROYECTO DEL CURSO OPTIMIZACI\'ON CONVEXA (2021-2)}
+\maketitle
+
+\section{Objetivos del proyecto}
+El objetivo del proyecto es que implementen software (en julia / python) que resuelva alg\'un problema de optimizaci\'on de su inter\'es. El proyecto deben servir para mejorar el uso pr\'actico de software especializado de optimizaci\'on y/o el manejo computacional de datos.
+
+A continuaci\'on listo algunas direcciones posibles pero pueden, si quieren, elegir algo que no este en esta lista. 
+
+
+\begin{enumerate}
+\item Optimizaci\'on para el manejo de capacidad hospitalaria:
+\href{https://www.gurobi.com/resource/covid-19-hospital-capacity-management/}{Charla Ghobadi}\\
+Problema: Replicar alguna versi\'on de estos resultados para los hospitales de Bogot\'a usando los datos abiertos del distrito.
+\item (Traveling Salesman en Colombia) Encuentre el camino m\'as corto que recorre todas las ciudades de Colombia: 
+\href{https://www2.oberlin.edu/math/faculty/bosch/tspart-page.html}{Dibujos}
+y  
+\href{https://developers.google.com/optimization/routing/tsp}{librerias existentes: OR-Tools}
+\item  Implemente alguna versi\'on aproximada de rank minimization con aplicaciones como las de ac\'a:
+\href{https://www.youtube.com/watch?v=QMybSG5vOgE}{Charla Udell}
+\item{Relative entropy minimization: \href{http://users.cms.caltech.edu/~venkatc/cs_rep_mathprog17.pdf}{Paper Chandrasekaran;} 
+\href{https://www.youtube.com/watch?v=vUPcyENTbGA}{Charla Chandrasekaran;}
+Muy relacionado con el seminario ECO.
+}
+\item Gaussian kernel factorization via approximation theory:
+\href{https://www.youtube.com/watch?v=83R63nfYgJM}{Charla Parrilo}
+\item  Switched linear systems and infinite products of matrices:
+\href{https://www.youtube.com/watch?v=V71STrm_YyM}{Charla Parrilo}
+\item Machine Learning Interpretable y optimizaci\'on: \href{https://www.gurobi.com/resource/develop-more-accurate-machine-learning-models-with-mip/}{Charla Bertsimas}
+Proyecto: Implementar el problema de optimal decision trees \href{https://arxiv.org/pdf/2103.15965.pdf}{Paper Aghaei, Gomez, Vayanos;} \href{https://arxiv.org/abs/2007.12652}{Paper Dyn prog;}\href{https://arxiv.org/abs/1904.12847}{Paper sparse}
+
+
+\item{Algoritmos para optimizaci\'on semidefinida a gran escala. Implementar un buen solver de estos} \href{https://arxiv.org/pdf/1912.02949.pdf}{Paper Udell, Tropp, etc.}
+
+\end{enumerate}
+
+
+ 
+
+
+\section{Reglas del proyecto}
+\begin{enumerate}
+\item{El proyecto es un trabajo en grupo. Cada grupo debe ser de m\'aximo $2$ personas (y la nota ser\'a la misma para todos los integrantes del grupo).}
+\item{Es necesario leer por lo menos dos art\'iculos pertinentes en cada proyecto.}
+\item{Es necesario entregar un software en cada proyecto. }
+\item{{\bf Entregas:} La totalidad del proyecto consiste de tres entregas (a hacer en LaTeX, un solo documento por grupo en cada entrega),
+\begin{enumerate}
+\item{Entrega 1 (Datos del proyecto): Entregar el t\'itulo del proyecto en que van a trabajar, los integrantes del grupo y un p\'arrafo con una descripci\'on del problema en que van a trabajar.}
+\item{Entrega 2 (Plan concreto del proyecto): Debe contener: El (o los) modelo(s) matem\'atico(s) del problema que quieren estudiar, {\it los datos que quieren utilizar} y referencias a al menos dos art\'iculos pertinentes. Idealmente debe incluir algunos ejemplos de prueba en los que pueden resolver el problema efectivamente y los resultados que obtienen.}
+\item{Entrega 3 (Examen final): La entrega final consiste de cuatro partes,
+\begin{enumerate}
+\item{Un documento en LaTex explicando los resultados del proyecto. Debe incluir una descripci\'on del problema, del modelo utilizado y de los resultados computacionales obtenidos (con tablas, figuras, etc.) asi como una secci\'on explicando qu\'e dicen los resultados sobre la pregunta original propuesta. Debe ser de a lo m\'as 10 p\'aginas de longitud, siguiendo el formato de los What is? de la AMS
+\url{https://www.ams.org/journals/notices/201405/rnoti-p492.pdf}
+
+}
+\item{El c\'odigo del programa utilizado para obtener los resultados (en el/los lenguajes que quieran)}
+\item{Una charla de $40$ mins con el objetivo de explicar los resultados del proyecto.}
+\item{Asistir a todas las charlas de sus compa\~neros el dia del examen final.}
+\end{enumerate}
+}
+\end{enumerate}
+
+}
+\end{enumerate}
+\end{document}

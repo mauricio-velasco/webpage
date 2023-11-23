@@ -1,0 +1,10 @@
+kk = QQ
+n=2
+d=3
+R = kk[x_0..x_n]
+monMap = flatten entries basis(d,R)
+DF = transpose(matrix(apply(n,j-> apply(monMap, F-> diff(x_j,F)))))---Differential of Veronese map
+--Now we compute a collection of random points
+k=3
+pointsList = apply(k,j->map(kk,R,apply(n+1,j->random(kk))))
+TsList = apply(pointsList, m-> m(DF))

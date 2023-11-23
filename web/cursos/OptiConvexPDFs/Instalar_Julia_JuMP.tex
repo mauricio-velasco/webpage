@@ -1,0 +1,67 @@
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\newtheorem{theorem}{Teorema.}
+\newtheorem{lemma}[theorem]{Lema.}
+\newtheorem{corollary}[theorem]{Corolario.}
+\newtheorem{definition}[theorem]{Definici\'on:}
+\newtheorem{example}[theorem]{Ejemplo:}
+\newtheorem{problema}[theorem]{Problema:}
+\newtheorem{remark}[theorem]{Observaci\'on:}
+
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+%\usetheme{default}
+
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\qq}{\mathbb{Q}}
+
+\usepackage{tikz, tikz-3dplot}
+
+\definecolor{cof}{RGB}{219,144,71}
+\definecolor{pur}{RGB}{186,146,162}
+\definecolor{greeo}{RGB}{91,173,69}
+\definecolor{greet}{RGB}{52,111,72}
+
+
+\begin{document}
+\title{INSTALACI\'ON DE JULIA para OPTIMIZACI\'ON}
+\date{}
+\maketitle
+
+Deben seguir los siguientes pasos:
+
+\begin{enumerate}
+\item Es necesario tener un editor de Julia que funcione bien. Les recomiendo Visual Studio Code. El lenguaje de programaci\'on Julia, el editor de c\'odigo Visual Studio Code y la extensi\'on para Julia de VSCode se instalan siguiendo los pasos de ac\'a:\\
+\url{https://www.julia-vscode.org/docs/dev/gettingstarted/}
+
+\item Instalar el paquete JuMP de Julia (que quiere decir Julia Mathematical Programming y que permite formular problemas de optimizaci\'on de muchos tipos) siguiendo los pasos descritos ac\'a:\\
+\url{https://jump.dev/JuMP.jl/stable/installation/#Installation-Guide}
+
+\item JuMP permite modelar problemas de optimizaci\'on. Para resolverlos hay que instalar alg\'un solver (que JuMP llama cuando ustedes le dan el comando optimize!). Un solver bueno y con una licencia amplia es GLPK (que deja resolver problemas lineales y lineales enteros). CSDP es un solver para programaci\'on semidefinida. Consultar el link en $(2)$ sobre detalles de la instalaci\'on de solvers.
+
+
+\item Despu\'es de tener alg\'un solver instalado intente resolver su propio problema! Puede iniciar ejecutando el ejemplo de ac\'a:\\
+\url{https://jump.dev/JuMP.jl/stable/tutorials/Gettingstarted/getting_started_with_JuMP/#Getting-started-with-JuMP}
+
+
+
+\end{enumerate}
+
+
+\end{document}

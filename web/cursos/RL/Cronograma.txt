@@ -1,0 +1,55 @@
+Cronograma de presentaciones, curso tutorial de Reinforcement Learning (2022-1):
+
+Participantes: 
+
+0. Mauricio Velasco
+1. Nicolás Betancourt 
+2. Nicolás Castro 
+3. Sergio Cristancho 
+4. David Corredor
+5. Juan Camilo Bedoya
+6. Juan Manuel Perez
+7. Federico Galvez
+8. Nicolás Rugeles 
+9. Santiago Fino 
+10. Mateo Campo 
+11. Jose Luis Mora
+12. Deniz Sanchez
+13. Javier Hernán García 
+14. Melissa Robles
+
+Las secciones se refieren al libro de Dimitris Bertsekas [BRL] "Reinforcement learning and optimal control" (2019)
+
+El número entre paréntesis [j] indica el presentador de cada semana según la lista de arriba.
+
+
+Semana 1: [0] Deterministic dynamic programming (1.1)
+Semana 2: [1] Stochastic dynamic programming / multi-armed bandits (1.2)
+Semana 3: [2] Examples of dynamic programming (1.3)
+
+Semana 4: ENTREGA 1 de los proyectos
+
+Semana 5: [3]  Approximation in Value Space (2.1, 2.2, 2.3)
+Semana 6: [4]  Look-ahead, Rollout y MonteCarlo tree search (2.2 -2.3)
+Semana 7: [5]  Arquitecturas de aproximación (3.1,3.2)
+
+Semana 8: ENTREGA 2 de los proyectos
+
+Semana 9: [6]  Sequential and Q-factor approximations (3.3-3.4)
+Semana 10: [7] Infinite horizon problems (4.1,4.2,4.3)
+Seamana 11: [8] Exact and approximate value iteration (4.4)
+Semana 12: [9] Policy iteration (4.5)
+Semana 13: [10] Performance bounds (4.6) 
+Semana 14: [11] Simulation based policy iteration (4.7)
+Semana 15: [12] Q-learning (4.8)
+
+Semana 16: [13] Aggregation (5)
+Semana 16: ENTREGA 3 de los proyectos
+
+
+OVERLEAF NOTAS:
+	Overleaf view link (para cuando quieran leer las notas escritas por otros participantes)
+	https://www.overleaf.com/read/ptxqqvkvprwq
+
+	Overleaf edit link (para cuando escriban las de su semana)
+	https://www.overleaf.com/6233529936wkbdyyrbnhyn

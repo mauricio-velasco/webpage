@@ -1,0 +1,80 @@
+\documentclass[usepdftitle=false]{beamer}
+\usetheme{Berkeley}
+
+
+
+\title[]{Vectorial Virtual -- Taller 3, parte 2: Teoremas de Green y Stokes}
+
+\date{Mayo 2020}
+
+\begin{document}
+\begin{frame}{Problema 6:}
+
+Sea $u:\mathbb{R}^3\rightarrow \mathbb{R}$ una funci\'on escalar diferenciable. Sea $H=\nabla u$ el campo vectorial gradiente de $u$. 
+
+\begin{enumerate}
+\item Verifique que $\nabla \times H= \vec{0}$.
+\item (V \'o F) Es verdad qu\'e $\nabla\cdot H = 0$ para cualquier funci\'on diferenciable $u$?
+\item (V \'o F) Si $F$ es un campo vectorial con $\nabla \times F=0$ entonces $F$ es conservativo.
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Problema 7: Teorema de Green}
+
+\begin{enumerate}
+\item Considere el campo vectorial 
+\[F(x,y)=(22y+2x\sin(y)+17\sin(x),x^2\cos(y)+13y^{200\sin(y)})\]
+
+Calcule el trabajo realizado por $F$ a lo largo del tri\'angulo con v\'ertices $(0,0)$, $(2\pi,0)$ y $(2\pi,2\pi)$ en ese orden.
+
+\item Considere el campo vectorial \[G(x,y)=(3xy^2, 3x^2).\] 
+
+Calcule el trabajo realizado por $G$ a lo largo de la frontera del rect\'angulo $0\leq x\leq 2$, $0\leq y\leq 3$ en direcci\'on de las manecillas del reloj.
+
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Problema 8: Teorema de Green y el c\'alculo de \'areas} 
+
+\begin{enumerate}
+\item Sea $F(x,y)=(0,x)$. Utilice el Teorema de Green para demostrar que, para cualquier curva simple cerrada $\sigma$ positivamente orientada 
+\[\int_{\sigma} Fd\vec{s} = Area(D)\]
+Donde $D$ es la region encerrada por $\sigma$.
+\item Sea $r(t)$ la curva parametrizada para $-1\leq t\leq 1$ por:
+\[r(t)=\left(\frac{\sin(\pi t)^2}{t}, t^2-1\right)\]
+\begin{enumerate}
+\item Dibuje la curva (puede ayudarse con software)
+\item Calcule el \'area encerrada por la curva usando la parte $(1)$.
+\end{enumerate}
+
+Esta es la idea detr\'as de un {\it plan\'imetro}
+\url{https://en.wikipedia.org/wiki/Planimeter}
+
+\end{enumerate}
+ 
+ 
+ 
+ 
+\end{frame}
+
+\begin{frame}{Problema 9: Teorema de Stokes}
+El plano $z=x+4$ y el cilindro $x^2+y^2=4$ se intersectan en una curva $C$ orientada en contra de las manecillas del reloj cuando la vemos desde arriba. Calcule $\int_CFds$ donde $F$ es el campo vectorial dado por
+\[F(x,y,z) = \left(x^3+2y,\sin(y)+z,x+\sin(z^2)\right)\] 
+\end{frame}
+
+\begin{frame}{Problema 10: Teorema de Stokes}
+Sea $C$ la curva orientada parametrizada por 
+\[r(t)=\left(\cos(t), \sin(t), 8-\cos^2(t)-\sin (t)\right)\] para $0\leq t\leq 2\pi$ y sea $F$ el campo vectorial dado por
+\[F(x,y,z)=\left(z^2-y^2, -2xy^2, e^{\sqrt{z}}\cos(z)\right).\]
+Calcule el trabajo realizado por $F$ a lo largo de $\sigma$. 
+ 
+ 
+\end{frame}
+
+
+
+\end{document}

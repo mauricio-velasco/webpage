@@ -1,0 +1,146 @@
+\documentclass[usepdftitle=false]{beamer}
+\usetheme{Berkeley}
+\begin{document}
+
+
+
+\title[]{Taller Vectorial Virtual parte 2: Integrales triples iteradas}
+
+\date{Marzo 2020}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{Ejercicio 6}
+\begin{enumerate}
+\item Sea $E$ la regi\'on s\'olida encerrada por el paraboloide $y=x^2+z^2$ y el plano $y=4$. Dibuje la regi\'on y escriba la integral sobre $E$ como:
+
+\begin{enumerate}
+\item  Una integral iterada con orden $dydzdx$ 
+\item  Una integral iterada con orden $dzdxdy$ 
+\end{enumerate}
+
+\item Sea $E$ la regi\'on s\'olida encerrada por el paraboloide $x=y^2$ y los planos $x=z$, $z=0$ y $x=1$. Dibuje la regi\'on $E$ y escriba la integral sobre $E$ como:
+
+\begin{enumerate}
+\item  Una integral iterada con orden $dzdydx$ 
+\item  Una integral iterada con orden $dxdydz$ 
+\end{enumerate}
+
+
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Ejercicio 7}
+Para cada una de las siguientes integrales iteradas dibuje la regi\'on de integraci\'on y calcule el valor de la integral
+\begin{enumerate}
+\item $\int_0^1\int_0^z\int_0^{x+z}xzdydxdz$
+
+\item $\int_0^1\int_{\sqrt{x}}^1\int_0^{1-y}dzdydx$
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Ejercicio 8: Masas y densidades}
+La funci\'on de densidad de un pozo petrolero potencial (medida en Toneladas por metro c\'ubico) esta dada por
+\[\rho(x,y,z)=\begin{cases}
+e^{-(x+y+z)}\text{, si $x,y,z\geq 0$}\\
+0\text{, de lo contrario}\\
+\end{cases}\]
+\begin{enumerate}
+
+\item Dibuje los conjuntos de nivel $\frac{1}{e}$, $\frac{1}{e^2}$ y $\frac{1}{e^3}$ de $\rho$ (ac\'a la letra $e$ denota el n\'umero con $log(e)=1$, $e\simeq 2.718$).
+\item Dibuje la regi\'on encerrada por los planos $x+z+y\leq 1$ $x=0$, $y=0$, $z=0$ y calcule su masa total asumiendo la funci\'on de densidad de la parte $(1)$.
+
+\end{enumerate}
+
+\end{frame}
+
+
+
+\begin{frame}{Ejercicio 9: Probabilidad} La densidad conjunta de tres variables aleatorias $X,Y$ y $Z$ esta dada por 
+\[f(x,y,z)=\begin{cases}
+Cxyz\text{, si $0\leq x\leq 2$, $0\leq y\leq 1$ y $0\leq z\leq 2$}\\
+0\text{, de lo contrario.}
+\end{cases}\]
+\begin{enumerate}
+\item Encuentre el valor de la constante $C$ (El que hace que la integral sobre todo $\mathbb{R}^3$ valga uno)
+\item Calcule $\mathbb{P}\{ X\leq 1, Y\leq 1, Z\leq 1\}$ (es decir calcule la integral de $f$ sobre $0\leq x\leq 1$, $0\leq y\leq y$ y $0\leq z\leq 1$)
+\item Calcule $\mathbb{P}\{ X+Y+Z\leq 1\}$ (es decir calcule la integral de $f$ sobre la regi\'on donde $x+y+z\leq 1$)
+
+\end{enumerate}
+
+\end{frame}
+
+
+\end{document}
+
+
+
+\begin{frame}{Ejercicio 5}
+
+Evalue las siguientes integrales dobles. No olvide dibujar las regiones de integraci\'on.
+\begin{enumerate}
+\item $\iint_Dx\cos(y)dA=$ donde $D$ es la regi\'on acotada por las curvas $y=2x^2$ y $y=1$ con $x\geq 0$.
+\item $\iint_R (3x-y)dA$ donde $R$ es el c\'irculo de radio $\sqrt{2}$ centrado en el origen.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Ejercicio 2}
+
+Dibuje la regi\'on de integraci\'on de las siguientes integrales iteradas:
+
+\begin{enumerate}
+\item $\int_{-1}^0\int_0^{1+y}(1-x+y)dxdy$
+\item $\int_{-1}^1\int_{-2|x|}^{|x|} e^{x+y}dydx$
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Ejercicio 3}
+Eval\'ue las siguientes integrales. ({\it Sugerencia.} Si la integral parece muy dif\'icil, a veces vale la pena cambiar el orden de integraci\'on). No olvide dibujar las regiones de integraci\'on. 
+
+\begin{enumerate}
+\item $\int_0^{\sqrt{\pi}}\int_y^{\sqrt{\pi}}\cos(x^2)dxdy=$
+\item $\int_0^{1}\int_{\sqrt{x}}^{1}e^{y^3}dydx=$
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Ejercicio 4}
+
+
+Sea $R$ el rect\'angulo $[-1,1]\times [1,3]$. 
+
+\begin{enumerate}
+\item Escriba la integral $\iint_R e^{-(x^2+y^2)}dA$ como l\'imite de una doble sumatoria, usando la definición de integral doble. (No olvide escribir f\'ormulas expl\'icitas para el punto $\vec{x_{ij}^*}$ que escogi\'o).
+
+\item OPCIONAL: Usando la parte $(a)$, escriba un programa en python que calcule los primeros $100$, $1000$ y $10000$ t\'erminos de esta suma. Cu\'anto vale aproximadamente la integral? (notar que esta integral no se puede calcular con funciones elementales asi que es necesario aproximarla num\'ericamente).
+
+\end{enumerate}
+
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{Ejercicio 5 (Integraci\'on y optimizaci\'on)}
+
+\begin{enumerate}
+\item Encuentre los valores m\'aximos y m\'inimos que alcanza la funci\'on $f(x,y)=\frac{1}{x^2+y^2+1}$ en el rect\'angulo $R=[-1,1]\times [1,2]$ (es decir $R$ es el conjunto de $(x,y)$ tales que $-1\leq x\leq 1$ y $ 1\leq y\leq 2$).
+\item Utilice el punto anterior para demostrar que
+\[1\leq \iint_R \frac{dA}{x^2+y^2+1}\leq 6\]
+\end{enumerate}
+\end{frame}
+
+
+\end{document}
