@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Aprendizaje Automático con Garantías Matemáticas — FCE ANII</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --navy: #002b5c;
+      --navy-2: #0a4a8f;
+      --accent: #c8912a;
+      --ink: #1f2933;
+      --muted: #5b6b7b;
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --border: #e4e9ef;
+      --link: #1c5f9e;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: var(--link);
+    }
+    header {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+      color: #fff;
+      padding: 3.5rem 1.25rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 1.1rem;
+      font-size: 2.25rem;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      font-weight: 700;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 0.45rem 1.15rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+      margin-bottom: 1.35rem;
+    }
+    .header-course-title {
+      margin: 0;
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.92);
+      letter-spacing: 0.02em;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2.5rem auto;
+      background: var(--card);
+      padding: 2.5rem 2.25rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(15, 35, 60, 0.06), 0 10px 28px rgba(15, 35, 60, 0.08);
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    section p {
+      margin: 0 0 1rem;
+    }
+    section p:last-child {
+      margin-bottom: 0;
+    }
+    h2 {
+      color: var(--navy);
+      margin: 0 0 1.15rem;
+      font-size: 1.5rem;
+      letter-spacing: -0.005em;
+      position: relative;
+      padding-left: 1rem;
+    }
+    h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.15rem;
+      width: 4px;
+      height: 1.05em;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+    h3 {
+      color: var(--navy);
+      margin: 1.5rem 0 0.75rem;
+      font-size: 1.15rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 0.55rem;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 0 0 1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    thead th {
+      background: linear-gradient(180deg, var(--navy), var(--navy-2));
+      color: #fff;
+      text-align: left;
+      padding: 0.7rem 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+    tbody td {
+      padding: 0.65rem 0.85rem;
+      border-top: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even) {
+      background: #f7f9fb;
+    }
+    tbody tr:hover {
+      background: #eef4fb;
+    }
+    td .num {
+      color: var(--muted);
+    }
+    strong {
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .state {
+      display: inline-block;
+      padding: 0.12rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .state.final {
+      background: #e5f3e7;
+      color: #1f7a33;
+    }
+    .state.accept {
+      background: #e7eefb;
+      color: #1c5f9e;
+    }
+    .state.review {
+      background: #fbf1df;
+      color: #946217;
+    }
+    .schools {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .school {
+      display: block;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: 8px;
+      padding: 1rem 1.15rem;
+      background: linear-gradient(180deg, #f7fafd, #eef6ff);
+      text-decoration: none;
+      color: var(--ink);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .school:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+    .school .s-title {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+    .school .s-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      background: #eef1f4;
+      padding: 1.25rem;
+      margin-top: 2.5rem;
+    }
+    a:focus-visible {
+      outline: 3px solid rgba(28, 95, 158, 0.5);
+      outline-offset: 2px;
+    }
+    @media (max-width: 640px) {
+      header {
+        padding: 2.5rem 1rem;
+      }
+      header h1 {
+        font-size: 1.75rem;
+      }
+      .header-course-title {
+        font-size: 1.15rem;
+      }
+      .container {
+        margin: 1.5rem 0.75rem;
+        padding: 1.5rem 1.25rem;
+      }
+      .schools {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Aprendizaje Automático con Garantías Matemáticas</h1>
+  <span class="badge">Fondo Clemente Estable — ANII · FCE_1_2023_1_176172 · 24 meses</span>
+  <p class="header-course-title">Machine Learning with Mathematical Guarantees</p>
+</header>
+
+<div class="container">
+
+  <section id="resumen">
+    <h2>Resumen del proyecto</h2>
+    <p>
+      Los desarrollos recientes del aprendizaje profundo han convertido a las redes neuronales en una
+      tecnología clave, pero fenómenos como la susceptibilidad de los modelos de imagen a perturbaciones
+      adversarias o la propensión de los modelos de lenguaje a “alucinar” evidencian su fragilidad. Este
+      proyecto propone arquitecturas novedosas de aprendizaje automático acompañadas de
+      <strong>certificados matemáticos</strong> (demostraciones formales) de la calidad de sus resultados.
+    </p>
+  </section>
+
+  <section id="participantes">
+    <h2>Participantes en Uruguay</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Afiliación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mauricio Velasco Gregory <span class="note">(Responsable)</span></td>
+            <td>CMAT — Centro de Matemáticas, Udelar</td>
+          </tr>
+          <tr>
+            <td>Marcelo Fiori Schiavo <span class="note">(Co‑Responsable)</span></td>
+            <td>Udelar, Facultad de Ingeniería, IMERL</td>
+          </tr>
+          <tr>
+            <td>Federico Larroca Ponzoni</td>
+            <td>Udelar, Facultad de Ingeniería, Instituto de Ingeniería Eléctrica (IIE)</td>
+          </tr>
+          <tr>
+            <td>Maria Paola Bermolen Romeo</td>
+            <td>Udelar, Facultad de Ingeniería, IMERL</td>
+          </tr>
+          <tr>
+            <td>Gustavo Vazquez</td>
+            <td>Universidad Católica del Uruguay, Departamento de Informática</td>
+          </tr>
+          <tr>
+            <td>Pedro Raigorodsky <span class="note">(Estudiante doctoral)</span></td>
+            <td>UdelaR, Pedeciba Matemática</td>
+          </tr>
+          <tr>
+            <td>Leandro Bentancur <span class="note">(Estudiante doctoral)</span></td>
+            <td>UdelaR, Pedeciba Matemática</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="participantes-internacionales">
+    <h2>Participantes internacionales</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Afiliación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Benjamin Blum-Smith</td>
+            <td>Department of Applied Mathematics and Statistics, Johns Hopkins University</td>
+          </tr>
+          <tr>
+            <td>Joan Bruna</td>
+            <td>Courant Institute, New York University</td>
+          </tr>
+          <tr>
+            <td>Mateo Díaz</td>
+            <td>Johns Hopkins University/University of Chicago</td>
+          </tr>
+          <tr>
+            <td>Gonzalo Mateos</td>
+            <td>University of Rochester, USA</td>
+          </tr>
+          <tr>
+            <td>Soledad Villar</td>
+            <td>Department of Applied Mathematics and Statistics, Johns Hopkins University</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="actividades">
+    <h2>Actividades y resultados</h2>
+
+    <h3>(1) Artículos de investigación</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>N°</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+            <th>Título</th>
+            <th>Autores</th>
+            <th>Vehículo / Publicación</th>
+            <th>URI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="num">1</td>
+            <td>Artículo científico</td>
+            <td><span class="state final">Finalizado</span></td>
+            <td>Graph neural networks and non‑commuting operators</td>
+            <td>M. <strong>Velasco</strong>, K. <strong>Xie</strong>, B. Rychtenberg, S. <strong>Villar</strong></td>
+            <td>NeurIPS 2024</td>
+            <td><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/ad9964b731bc7b5621a83c7869fc653b-Abstract-Conference.html" target="_blank">link</a></td>
+          </tr>
+          <tr>
+            <td class="num">2</td>
+            <td>Artículo científico</td>
+            <td><span class="state final">Finalizado</span></td>
+            <td>Universal Transferability for GNNs Via Graphons</td>
+            <td>M. <strong>Velasco</strong>, K. <strong>Xie</strong>, B. Rychtenberg, S. <strong>Villar</strong></td>
+            <td>58th Asilomar Conf. on Signals, Systems, and Computers</td>
+            <td><a href="https://ieeexplore.ieee.org/document/10942971" target="_blank">link</a></td>
+          </tr>
+          <tr>
+            <td class="num">3</td>
+            <td>Artículo científico</td>
+            <td><span class="state final">Finalizado</span></td>
+            <td>A Random Dot Product Graph Model for Weighted and Directed Networks</td>
+            <td>B. Marenco, P. <strong>Bermolen</strong>, M. <strong>Fiori</strong>, F. <strong>Larroca</strong>, G. <strong>Mateos</strong></td>
+            <td>58th Asilomar Conf. on Signals, Systems, and Computers</td>
+            <td><a href="https://ieeexplore.ieee.org/document/10942779" target="_blank">link</a></td>
+          </tr>
+          <tr>
+            <td class="num">4</td>
+            <td>Artículo científico</td>
+            <td><span class="state accept">Aceptado</span></td>
+            <td>Spurious local minima in nonconvex sum‑of‑squares optimization</td>
+            <td>G. Blekherman, R. Sinn, S. Zhang, M. <strong>Velasco</strong></td>
+            <td>To Appear in SIAM Journal on Optimization</td>
+            <td><a href="https://arxiv.org/abs/2411.02208" target="_blank">arXiv</a></td>
+          </tr>
+          <tr>
+            <td class="num">5</td>
+            <td>Artículo científico</td>
+            <td><span class="state final">Finalizado</span></td>
+            <td>Characterization of Logarithmic Fekete Critical Configurations of at Most Six Points in All Dimensions</td>
+            <td>D. Armentano, L. <strong>Bentancur</strong>, F. Carrasco, M. <strong>Fiori</strong>, M. Valdés, M. <strong>Velasco</strong></td>
+            <td>ISSAC 2025</td>
+            <td><a href="https://dl.acm.org/doi/proceedings/10.1145/3747199" target="_blank">link</a></td>
+          </tr>
+          <tr>
+            <td class="num">6</td>
+            <td>Artículo científico</td>
+            <td><span class="state final">Finalizado</span></td>
+            <td>LASE: Learned adjacency spectral embeddings</td>
+            <td>S. Pérez Casulo, M. <strong>Fiori</strong>, F. <strong>Larroca</strong>, G. <strong>Mateos</strong></td>
+            <td>Transactions on Machine Learning Research (accepted)</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td class="num">7</td>
+            <td>Artículo científico</td>
+            <td><span class="state accept">Aceptado</span></td>
+            <td>Approximation of starshaped sets using polynomials</td>
+            <td>C. Meroni, J. Miller, M. <strong>Velasco</strong></td>
+            <td>To Appear in Information and Inference: A Journal of the IMA</td>
+            <td><a href="https://arxiv.org/abs/2505.24352" target="_blank">arXiv</a></td>
+          </tr>
+          <tr>
+            <td class="num">8</td>
+            <td>Artículo científico</td>
+            <td><span class="state review">Sometido</span></td>
+            <td>Optimal Small Set Expanders and Their Codes</td>
+            <td>T. Bogart, M. <strong>Fiori</strong>, P. <strong>Raigorodsky</strong>, M. <strong>Velasco</strong></td>
+            <td>Submitted to a Q1 Journal in Mathematics</td>
+            <td><a href="https://arxiv.org/abs/2606.23579" target="_blank">arXiv</a></td>
+          </tr>
+          <tr>
+            <td class="num">9</td>
+            <td>Artículo científico</td>
+            <td><span class="state review">Sometido</span></td>
+            <td>Mollified Christoffel-Darboux Kernels and Density Recovery on Varieties</td>
+            <td>L. <strong>Bentancur</strong>, D. Henrion, M. <strong>Velasco</strong></td>
+            <td>Submitted to a Q1 Journal in Mathematics</td>
+            <td><a href="https://arxiv.org/abs/2603.09462" target="_blank">arXiv</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">
+      Los apellidos en <strong>negrita</strong> corresponden a miembros/participantes del proyecto.
+    </p>
+    <h3>(2) Enseñanza y difusión</h3>
+
+    <h3 style="margin-top:1rem">(2.1) Charlas en conferencias</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Conferencista</th>
+            <th>Charla</th>
+            <th>Conferencia</th>
+            <th>Lugar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>M. <strong>Velasco</strong></td>
+            <td>Approximation of star‑shaped sets using polynomials</td>
+            <td>SIAM Conference on Applied Algebraic Geometry (AG25)</td>
+            <td>Madison, Wisconsin, USA</td>
+          </tr>
+          <tr>
+            <td>M. <strong>Fiori</strong>, M. <strong>Velasco</strong>, F. <strong>Larroca</strong></td>
+            <td>A Random Dot Product Graph Model for Weighted and Directed Networks</td>
+            <td>58th Asilomar Conference on Signals, Systems, and Computers</td>
+            <td>California, USA</td>
+          </tr>
+          <tr>
+            <td>P. <strong>Bermolen</strong></td>
+            <td>Charla plenaria</td>
+            <td>Conferencia Khipu</td>
+            <td>Santiago, Chile</td>
+          </tr>
+          <tr>
+            <td>M. <strong>Velasco</strong></td>
+            <td>Machine learning in Barron spaces</td>
+            <td>Mathematics of Artificial Intelligence</td>
+            <td>São Paulo, Brasil</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:1rem">(2.2) Pósteres</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Póster</th>
+            <th>Autores</th>
+            <th>Conferencia</th>
+            <th>Lugar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Expander graphs and their applications</td>
+            <td>P. <strong>Raigorodsky</strong>, M. <strong>Fiori</strong>, M. <strong>Velasco</strong></td>
+            <td>1er Congreso CICADA <span class="note">(mención de honor)</span></td>
+            <td>Montevideo, Uruguay</td>
+          </tr>
+          <tr>
+            <td>Expander graphs and their applications</td>
+            <td>P. <strong>Raigorodsky</strong>, M. <strong>Fiori</strong>, M. <strong>Velasco</strong></td>
+            <td>Conferencia MATEMAX (en honor a Alicia Dickenstein)</td>
+            <td>UBA, Buenos Aires, Argentina</td>
+          </tr>
+          <tr>
+            <td>Expander graphs and their applications</td>
+            <td>P. <strong>Raigorodsky</strong>, M. <strong>Fiori</strong>, M. <strong>Velasco</strong></td>
+            <td>FoCM 2026 — Foundations of Computational Mathematics</td>
+            <td>Vienna, Austria</td>
+          </tr>
+          <tr>
+            <td>Moments, Mollified Christoffel-Darboux Kernel and Density Recovery</td>
+            <td>L. <strong>Bentancur</strong>, D. Henrion, M. <strong>Velasco</strong></td>
+            <td>FoCM 2026 — Foundations of Computational Mathematics</td>
+            <td>Vienna, Austria</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>(3) Escuelas de métodos matemáticos en machine learning</h3>
+    Gracias a fondos directos del proyecto, o a colaboraciones científicas estimuladas por el proyecto, hemos podido realizar varias escuelas de métodos matemáticos en machine learning con investigadores internacionales distinguidos<br>
+
+    <div class="schools">
+      <a class="school" href="https://mauricio-velasco.github.io/EscuelasOML/index1.html" target="_blank" rel="noopener">
+        <div class="s-title">1ª escuela de métodos matemáticos</div>
+        <div class="s-meta">3–5 de noviembre de 2025 · FCEA<br/>
+        Diffusion Models (J. Bruna) y Algebra in ML theory (S. Villar, B. Blum‑Smith)</div>
+      </a>
+      <a class="school" href="https://mauricio-velasco.github.io/EscuelasOML/index2.html" target="_blank" rel="noopener">
+        <div class="s-title">2ª escuela de métodos matemáticos</div>
+        <div class="s-meta">25–27 de noviembre de 2025 · FING<br/>
+        Moment‑SOS hierarchy (D. Henrion) e Introduction to Random Matrix Theory (R. Chhaibi)</div>
+      </a>
+      <a class="school" href="https://mauricio-velasco.github.io/EscuelasOML/index3.html" target="_blank" rel="noopener">
+        <div class="s-title">3ª escuela de métodos matemáticos</div>
+        <div class="s-meta">16 y 18 de junio de 2026 · FING<br/>
+        Métodos Probabilísticos en Matemática Discreta (T. Bogart)</div>
+      </a>
+      <a class="school" href="https://mauricio-velasco.github.io/EscuelasOML/index.html" target="_blank" rel="noopener">
+        <div class="s-title">4ª escuela de métodos matemáticos en ML</div>
+        <div class="s-meta">9–10 de noviembre de 2026 · FING<br/>
+        “A Short Course on the Christoffel Function” (J. B. Lasserre, D. Henrion)</div>
+      </a>
+    </div>
+  </section>
+</div>
+
+
+<footer class="footer">
+  &copy; 2026 — Aprendizaje Automático con Garantías Matemáticas (Fondo Clemente Estable, ANII)
+</footer>
+
+</body>
+</html>
