@@ -204,6 +204,37 @@
       color: var(--muted);
       font-size: 0.9rem;
     }
+    .semestres {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 0 0 1rem;
+    }
+    .semester {
+      display: block;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: 8px;
+      padding: 1rem 1.15rem;
+      background: linear-gradient(180deg, #f7fafd, #eef6ff);
+      text-decoration: none;
+      color: var(--ink);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .semester:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+    .semester .s-title {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+    .semester .s-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
     .note {
       font-size: 0.9rem;
       color: var(--muted);
@@ -235,7 +266,8 @@
         margin: 1.5rem 0.75rem;
         padding: 1.5rem 1.25rem;
       }
-      .schools {
+      .schools,
+      .semestres {
         grid-template-columns: 1fr;
       }
     }
@@ -343,6 +375,33 @@
   <section id="actividades">
     <h2>Actividades y resultados</h2>
 
+    <h3>(0) Seminario</h3>
+    <p>
+      El proyecto nos motivó para iniciar un seminario permanente en 'Optimización y Machine Learning'
+      que se ha reunido semanalmente desde 2024-2. Nos ha llevado a revisar literatura reciente,
+      a descubrir problemas abiertos y a construir nuevas colaboraciones.
+    </p>
+    <div class="semestres">
+      <a class="semester" href="https://mauricio-velasco.github.io/SeminarioOML/seminario2024.html" target="_blank" rel="noopener">
+        <div class="s-title">Seminario 2024-2</div>
+        <div class="s-meta">Agosto–noviembre 2024 · Salón 703, FING<br/>Optimización regularizada y machine learning</div>
+      </a>
+      <a class="semester" href="https://mauricio-velasco.github.io/SeminarioOML/seminario2025_1.html" target="_blank" rel="noopener">
+        <div class="s-title">Seminario 2025-1</div>
+        <div class="s-meta">Febrero–junio 2025 · IMERL (Salón 101), FING<br/>Optimización regularizada y machine learning</div>
+      </a>
+      <a class="semester" href="https://mauricio-velasco.github.io/SeminarioOML/Seminario2026_1.html" target="_blank" rel="noopener">
+        <div class="s-title">Seminario 2026-1</div>
+        <div class="s-meta">Marzo–junio 2026 · FCEA (Gonzalo Ramírez)<br/>Deep learning geométrico y teoría de aproximación</div>
+      </a>
+      <a class="semester" href="https://mauricio-velasco.github.io/SeminarioOML/Seminario2026_2.html" target="_blank" rel="noopener">
+        <div class="s-title">Seminario 2026-2</div>
+        <div class="s-meta">Agosto–noviembre 2026 · Salón 726, FING<br/>Optimización, GNNs y neural operators</div>
+      </a>
+    </div>
+    <p>
+      Organizadores: <strong>M. Fiori</strong> y <strong>M. Velasco</strong>
+    </p>
     <h3>(1) Artículos de investigación</h3>
     <div class="table-wrap">
       <table>

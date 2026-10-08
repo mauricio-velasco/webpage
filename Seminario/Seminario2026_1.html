@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminario: Optimización y Aprendizaje Automático 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #111;
+    }
+    header {
+      background-color: #ff4500;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h2 {
+      color: #ff4500;
+      margin-top: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+    }
+    a {
+      color: #0099cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #f5f5f5;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Seminario: Optimización y Aprendizaje Automático (2026)</h1>
+  <h1><p>Viernes 13:00–14:30 | Salón 25 </p></h1> 
+    <h1><p>(FCEA en Gonzalo Ramirez)</p></h1>
+</header>
+
+<main>
+  <section>
+    <h2>Descripción</h2>
+    <p>
+Este semestre el seminario tiene por objetivo discutir temas de investigación reciente en deep learning geométrico y teoría de aproximación.
+    </p>
+  </section>
+
+  <section>
+    <h2>Calendario del Seminario</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Título</th>
+          <th>Conferencista</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+<tbody>
+  <tr>
+    <td>20/3/2026</td>
+    <td>Reunión inicial — ver niveles de entrada?</td>
+    <td>Organizadores</td>
+    <td>Ver abajo</td>
+  </tr>
+  <tr>
+    <td>27/3/2026</td>
+    <td>Análisis de Fourier en grafos</td>
+    <td>M. Fiori</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3/4/2026</td>
+    <td>TURISMO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/4/2026</td>
+    <td>Graph neural networks 1</td>
+    <td>P. Raigorodsky</td>
+
+    <td>GNN1 (abajo)</td>
+  </tr>
+  <tr>
+    <td>17/4/2026</td>
+    <td>Graph Neural Networks 2</td>
+    <td>P. Raigorodsky</td>
+    <td>GNN2 (abajo)</td>
+  </tr>
+    <tr>
+    <td>24/4/2026</td>
+    <td>El fenómeno del doble descenso.</td>
+    <td>L. Frachelle</td>
+    <td>DD1 (abajo)</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>1/5/2026</td>
+    <td>FESTIVO</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8/5/2026</td>
+    <td>El fenómeno del doble descenso (parte 2)</td>
+    <td>L. Frachelle</td>
+    <td>DD2 (abajo)</td>
+  </tr>
+  <tr>
+    <td>15/5/2026</td>
+    <td>Optimal sampling for least‑squares approximation</td>
+    <td>L. Bentancur</td>
+    <td>CD Kernel (abajo)</td>
+  </tr>
+  <tr>
+    <td>22/5/2026</td>
+    <td>Machine learning y espacios de Barron</td>
+    <td>M. Velasco</td>
+    <td>Barron (abajo)</td>
+  </tr>
+  <tr>
+    <td>29/5/2026</td>
+    <td>La relación entre width y depth en redes neuronales</td>
+    <td>H. Selvaggi</td>
+    <td>WD (abajo) </td>
+  </tr>
+
+  <tr>
+    <td>05/6/2026</td>
+    <td>TBA</td>
+    <td>H. Selvaggi</td>
+    <td>WD (abajo)</td>
+  </tr>
+
+  <tr>
+    <td>12/6/2026</td>
+    <td>Poincaré Embeddings for Learning Hierarchical Representations</td>
+    <td>S. Lavayoll</td>
+    <td>PE (abajo)</td>
+  </tr>
+
+  <tr>
+    <td>19/6/2026</td>
+    <td>Festivo</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>26/6/2026</td>
+    <td>Poincaré Embeddings for Learning Hierarchical Representations II</td>
+    <td>S. Lavayoll</td>
+    <td></td>
+  </tr>
+
+
+</tbody>    </table>
+  </section>
+
+  <section>
+    <h2>Referencias de interés</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Autores</th>
+          <th>Link</th>
+          <th>Tema</th>
+        </tr>
+      </thead>
+          <tr>
+          <td>Optimal sampling for least‑squares approximation</td>
+          <td>Ben Adcock</td>
+          <td><a href="https://arxiv.org/abs/2409.02342">arXiv:2409.02342</a></td>
+          <td> CD kernel </td>
+          </tr>
+          <tr>
+          <td>CS4ML: A general framework for active learning with arbitrary data based on Christoffel functions</td>
+          <td>Ben Adcock, Juan M. Cardenas, Nick Dexter</td>
+          <td><a href="https://arxiv.org/abs/2306.00945">arXiv:2306.00945</a></td>
+          <td> CD kernel </td>
+          <tr>
+
+            <tr>
+  <td>Geometry and Optimization of Shallow Polynomial Networks</td>
+  <td>Y. Arjevani, J. Bruna, J. Kileel, E. Polak, M. Trager</td>
+  <td><a href="https://arxiv.org/abs/2501.06074" target="_blank" rel="noopener noreferrer">arXiv:2501.06074</a></td>
+  <td>DL / Optimization</td>
+</tr>
+<tr>
+  <td>Geometry of Polynomial Neural Networks</td>
+  <td>Kaie Kubjas, Jiayi Li, Maximilian Wiesmann</td>
+  <td><a href="https://arxiv.org/abs/2402.00949" target="_blank" rel="noopener noreferrer">arXiv:2402.00949</a></td>
+  <td>DL / Algebraic Geometry</td>
+</tr>
+
+<tr>
+  <td>Convolutional Neural Networks on Manifolds: From Graphs and Back</td>
+  <td>Zhiyang Wang, Luana Ruiz, Alejandro Ribeiro</td>
+  <td><a href="https://arxiv.org/abs/2210.00376" target="_blank" rel="noopener noreferrer">arXiv:2210.00376</a></td>
+  <td>Geometric DL / GNNs</td>
+</tr>
+
+
+
+
+            <td>The Barron Space and the Flow‑Induced Function Spaces for Neural Network Models</td>
+            <td>Weinan E, Chao Ma, Lei Wu</td>
+            <td><a href="https://arxiv.org/abs/1906.08039">arXiv:1906.08039</a></td>
+            <td> Barron </td>
+          </tr>
+          <tr>
+            <td>Operator Learning of Lipschitz Operators: An Information-Theoretic Perspective</td>
+            <td>Samuel Lanthaler</td>
+            <td><a href="https://arxiv.org/abs/2406.18794">arXiv:2406.18794</a></td>
+            <td> DL </td>
+          </tr>
+
+          <tr>
+            <td>Breaking the Curse of Dimensionality with Convex Neural Networks</td>
+            <td>Francis Bach</td>
+            <td><a href="https://arxiv.org/abs/1412.8690">arXiv:1412.8690</a></td>
+            <td> Barron </td>
+          </tr>
+
+
+<tr>
+  <td>Stability Properties of Graph Neural Networks</td>
+  <td>Fernando Gama,Joan Bruna,Alejandro Ribeiro</td>
+  <td><a href="https://arxiv.org/abs/1905.04497" target="_blank" rel="noopener noreferrer">arXiv:1905.04497</a></td>
+  <td>GNN1</td>
+</tr>
+
+
+<tr>
+  <td>On Vanishing Gradients, Over-Smoothing, and Over-Squashing in GNNs: Bridging Recurrent and Graph Learning</td>
+  <td>Álvaro Arroyo, Alessio Gravina, Benjamin Gutteridge, Federico Barbero, Claudio Gallicchio, Xiaowen Dong, Michael Bronstein, Pierre Vandergheynst</td>
+  <td><a href="https://arxiv.org/abs/2502.10818" target="_blank" rel="noopener noreferrer"> 	arXiv:2502.10818</a></td>
+  <td>GNN2</td>
+</tr>
+
+<tr>
+  <td>Graph Attention Networks</td>
+  <td>Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Liò, Yoshua Bengio</td>
+  <td><a href="https://arxiv.org/abs/1710.10903" target="_blank" rel="noopener noreferrer"> 	 	arXiv:1710.10903 </a></td>
+  <td>GNN2</td>
+
+</tr>
+
+<tr>
+  <td>Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks</td>
+  <td>Christopher Morris, Martin Ritzert, Matthias Fey, William L. Hamilton, Jan Eric Lenssen, Gaurav Rattan, Martin Grohe</td>
+  <td><a href="https://arxiv.org/abs/1810.02244" target="_blank" rel="noopener noreferrer"> 	 	 	arXiv:1810.02244 </a></td>
+  <td>GNN2</td>
+
+</tr>
+
+
+
+<tr>
+  <td>Reconciling Modern Machine Learning Practice and the Bias-Variance Trade-Off</td>
+  <td>Mikhail Belkin, Daniel Hsu, Siyuan Ma, Soumik Mandal</td>
+  <td><a href="https://arxiv.org/abs/1812.11118">arXiv:1812.11118</a></td>
+  <td> DD1 </td>
+</tr>
+
+<tr>
+  <td>Double Descent Demystified: Identifying, Interpreting & Ablating the Sources of a Deep Learning Puzzle</td>
+  <td>Rylan Schaeffer, Mikail Khona, Zachary Robertson, Akhilan Boopathy, Kateryna Pistunova, Jason W. Rocks, Ila Fiete, Oluwasanmi Koyejo</td>
+  <td><a href="https://arxiv.org/abs/2303.14151">arXiv:2303.14151</a></td>
+  <td> DD1 </td>
+</tr>
+
+<tr>
+  <td>Deep Double Descent: Where Bigger Models and More Data Hurt</td>
+  <td>Preetum Nakkiran, Gal Kaplun, Dimitris Kalimeris, Tristan Yang, Benjamin L. Edelman, Fred Zhang, Boaz Barak</td>
+  <td><a href="https://arxiv.org/abs/1912.02292">arXiv:1912.02292</a></td>
+  <td> DD2 </td>
+</tr>
+
+<tr>
+  <td>The Neural Tangent Kernel in High Dimensions: Triple Descent and a Multi-Scale Theory of Generalization</td>
+  <td>Ben Adlam, Jeffrey Pennington</td>
+  <td><a href="https://proceedings.mlr.press/v119/adlam20a.html">PMLR v119</a></td>
+  <td> DD2 </td>
+</tr>
+
+<tr>
+  <td>Depth-Width Trade-offs for ReLU Networks via Sharkovsky's Theorem</td>
+  <td>Vaggos Chatziafratis, Sai Ganesh Nagarajan, Ioannis Panageas, Xiao Wang</td>
+  <td><a href="https://arxiv.org/abs/1912.04378">arXiv:1912.04378</a></td>
+  <td> WD </td>
+</tr>
+
+<tr>
+  <td>Representation Benefits of Deep Feedforward Networks</td>
+  <td>Matus Telgarsky</td>
+  <td><a href="https://arxiv.org/abs/1509.08101">arXiv:1509.08101</a></td>
+  <td> WD </td>
+</tr>
+
+
+<tr>
+  <td>Poincaré Embeddings for Learning Hierarchical Representations</td>
+  <td>Maximillian Nickel, Douwe Kiela</td>
+  <td><a href="https://papers.nips.cc/paper_files/paper/2017/hash/59dfa2df42d9e3d41f5b02bfc32229dd-Abstract.html">neurIPS</a></td>
+  <td> PE </td>
+</tr>
+
+
+
+
+
+
+
+          </tr>
+      <tbody>
+        <!-- Aquí se agregarán los papers que me proporciones -->
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Organizadores</h2>
+    <ul>
+      <li>Marcelo Fiori — mfiori@fing.edu.uy</li>
+      <li>Mauricio Velasco — mvelasco@cmat.edu.uy</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 — Seminario de Optimización y Aprendizaje Automático
+</footer>
+
+</body>
+</html>
